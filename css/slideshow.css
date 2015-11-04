@@ -1,0 +1,173 @@
+﻿<style type=text/css> 
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+a:link {color:#000;}
+a:visited {color:#000;}
+a:active {color:#000;}
+a:hover {color:#000;}
+
+body {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	text-align: center;
+	color: #000;
+	font-size: 12px;
+}
+
+header.img {
+	background: #E73828;
+	
+}
+
+section {
+	width: 100%;
+}
+
+
+
+/* SlideArea
+-------------------------- */
+#slidewrap {
+	margin: 0 auto;
+	padding: 20px 20px;
+	width: 500px;
+	text-align: left;
+	background white;
+}
+#slidewrap ul li {
+	list-style: none;
+}
+
+#slidemask {
+	width: 500px;
+	height: 375px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+/* PhotoSlideArea
+-------------------------- */
+ul#photo {
+	top: 0;
+	left: 0;
+	width: 23540px;
+	height: 375px;
+	position: absolute;
+}
+ul#photo li {
+	width: 500px;
+	height: 375px;
+	float: left;
+	position: relative;
+}
+
+ul#photo li span {
+	bottom: 0;
+	left: 0;
+	padding: 0 10px;
+	width: 500px;
+	height: 40px;
+	line-height: 30px;
+	color: white;
+	font-weight: bold;
+	background: #333;
+	position: absolute;
+	opacity: 0.5;
+}
+
+/* CSS3 PhotoSlideAnimation
+-------------------------- */
+@-webkit-keyframes AutoSlidePhoto {
+	0% {left: 0;}
+	2% {left: -540px;}
+	4% {left: -1040px;}
+	6% {left: -1540px;}
+	8% {left: -2040px;}
+	10% {left: -2540px;}
+	
+	12% {left: -3040px;}
+	14% {left: -3540px;}
+	16% {left: -4040px;}
+	18% {left: -4540px;}
+	20% {left: -5040px;}
+	
+	22% {left: -5540px;}
+	24% {left: -6040px;}
+	26% {left: -6540px;}
+	28% {left: -7040px;}
+	30% {left: -7540px;}
+	
+	32% {left: -8040px;}
+	34% {left: -8540px;}
+	36% {left: -9040px;}
+	38% {left: -9540px;}
+	40% {left: -10040px;}
+
+	42% {left: -10540px;}
+	44% {left: -11040px;}
+	46% {left: -11540px;}
+	48% {left: -12040px;}
+	50% {left: -12540px;}
+	
+	52% {left: -13040px;}
+	54% {left: -13540px;}
+	56% {left: -14040px;}
+	58% {left: -14540px;}
+	60% {left: -15040px;}
+	
+	62% {left: -15540px;}
+	64% {left: -16040px;}
+	66% {left: -16540px;}
+	68% {left: -17040px;}
+	70% {left: -17540px;}
+
+	72% {left: -18040px;}
+	74% {left: -18540px;}
+	76% {left: -19040px;}
+	78% {left: -19540px;}
+	80% {left: -20040px;}
+
+	82% {left: -20540px;}
+	84% {left: -21040px;}
+	86% {left: -21540px;}
+	88% {left: -22040px;}
+	90% {left: -22540px;}
+
+	92% {left: -23040px;}
+	100% {left: 0;}
+	
+	
+
+}
+ul#photo {
+	-webkit-animation-name: AutoSlidePhoto;
+	-webkit-animation-duration: 70s;
+	-webkit-animation-iteration-count:infinite;
+}
+
+
+ul#button{
+	width: 600px;
+	height: 200px;
+	margin: auto;
+	margin-top: 10px;
+	position: center;
+}
+ul#button li{
+	float: left;
+	list-style-type:none;		/*リストマーカー無しにする*/
+	background-repeat:no-repeat; 	/*背景画像を繰り返さない*/
+}
+.float{
+	overflow: hidden;
+}
+.button a:hover img {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+</style>
