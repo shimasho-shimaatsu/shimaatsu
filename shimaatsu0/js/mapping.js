@@ -6,7 +6,7 @@ var neighborhoods = [];
 $(function() {
   var csvList;
   $.ajax({
-    url: './data/shimaatudata.csv',
+    url: './data/373.csv',
     success: function(data) {
     
       // csvを配列に格納
@@ -14,7 +14,7 @@ $(function() {
       
       // データを別配列に格納
       for (var i = 1; i < csvList.length-1; i++) {
-        neighborhoods.push(new google.maps.LatLng(csvList[i][8],csvList[i][9]));
+        neighborhoods.push(new google.maps.LatLng(csvList[i][7],csvList[i][8]));
         //placename.push('"'+csvList[i][0]+'"');
       };
     }
@@ -24,57 +24,70 @@ $(function() {
 //マーカー用配列
 var markers=[];
 
-//地図描画変数
+
+//GPSデータの取得
+
+var message;
 var map;
 
-//mapを表示
-function initMap() {
-  var myLatLng={lat: 34.834752, lng: 138.183324};
-  
-  //mapを表示
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    center: myLatLng
-  });
-  
-  //現在地マーカーを表示
-  marker = new google.maps.Marker({
-    map: map,
-    draggable: true,
-    animation: google.maps.Animation.DROP,
-    position: myLatLng
-  });
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-  
-  //マーカー吹き出し
-  var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">島田商業</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
-      '</div>'+
-      '</div>';
-  
-  //吹き出し表示
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-}
+      // 位置情報取得
+      function start_func(){
+        get_location();       
+      }
+ 
+      // ( 1 )位置情報を取得します。
+      function get_location(){
+        document.getElementById("area_name").innerHTML
+              = '位置情報取得します';
+          if (navigator.geolocation) {
+              // 現在の位置情報取得を実施 正常に位置情報が取得できると、
+              // successCallbackがコールバックされます。
+              navigator.geolocation.getCurrentPosition
+               (successCallback,errorCallback);
+          } else {
+                message = "本ブラウザではGeolocationが使えません";
+                document.getElementById("area_name").innerHTML
+                      = message;
+          }
+      }
+       // ( 2 )位置情報が正常に取得されたら
+       function successCallback(pos) {
+          var Potition_latitude = pos.coords.latitude;
+          var Potition_longitude = pos.coords.longitude;
+ 
+           // 位置情報が取得出来たらGoogle Mapを表示する
+           initialize(Potition_latitude,Potition_longitude);
+        }
+ 
+      function errorCallback(error) {
+        message = "位置情報が許可されていません";
+       document.getElementById("area_name").innerHTML = message;
+      }
+ 
+      // ( 3 )Google Map API を使い、地図を読み込み
+      function initialize(x,y) {
+        document.getElementById("area_name").innerHTML
+            = 'google map情報を取得中';
+ 
+       // Geolocationで取得した座標を代入
+        var myLatlng = new google.maps.LatLng(x,y);
+        var mapOptions = {
+          zoom: 13,
+          center: myLatlng,
+        }
+        map = new google.maps.Map
+           (document.getElementById("map"), mapOptions);
+ 
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title:"Your position"
+        });
+         get_area_name(myLatlng);
+      }
+ 
+
+
 
 //複数マーカーを表示
 function drop() {
