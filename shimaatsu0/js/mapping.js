@@ -6,7 +6,7 @@ var neighborhoods = [];
 $(function() {
   var csvList;
   $.ajax({
-    url: './data/373.csv',
+    url: './data/shimaatudata.csv',
     success: function(data) {
     
       // csvを配列に格納
@@ -14,7 +14,7 @@ $(function() {
       
       // データを別配列に格納
       for (var i = 1; i < csvList.length-1; i++) {
-        neighborhoods.push(new google.maps.LatLng(csvList[i][7],csvList[i][8]));
+        neighborhoods.push(new google.maps.LatLng(csvList[i][8],csvList[i][9]));
         //placename.push('"'+csvList[i][0]+'"');
       };
     }
@@ -92,7 +92,7 @@ var map;
 //複数マーカーを表示
 function drop() {
   for (var i = 0; i < neighborhoods.length-1; i++) {
-    addMarkerWithTimeout(neighborhoods[i], i * 200);
+    addMarkerWithTimeout(neighborhoods[i], i * 100);
   }
 }
 
