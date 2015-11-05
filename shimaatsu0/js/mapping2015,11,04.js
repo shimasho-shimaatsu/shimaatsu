@@ -29,7 +29,7 @@ var map;
 
 //mapを表示
 function initMap() {
-  var myLatLng={lat: 34.834752, lng: 138.183324};
+  //var myLatLng={lat: 34.834752, lng: 138.183324};
   
   //mapを表示
   map = new google.maps.Map(document.getElementById('map'), {
