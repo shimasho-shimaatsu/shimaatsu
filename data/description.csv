@@ -1,0 +1,9 @@
+﻿label,sublabel,description,styles,bgcolor,label,sublabel,description,styles,bgcolor
+衣類,,,img/irui.svg,#EF0C27,Central《島田中心エリア》,,,,#FE5331
+飲食店,,,img/inshoku.svg,#FF4DB7,East《六合エリア》,,,,#E80295
+家具,,,img/kagu.svg,#B94DFF,North《川根エリア》,,,,#23B5C7
+雑貨,,,img/zakka.svg,#4D9EFF,South《初倉エリア》,,,,#00A22D
+食品関連,,,img/shokuhinkanren.svg,#55A024,West《金谷エリア》,,,,#5A0D8A
+花屋,,,img/hanaya.svg,#78CC42
+和洋菓子,,,img/wayougashi.svg,#DDDD17
+その他,,,img/sonota.svg,#FF740D
