@@ -469,14 +469,14 @@ $(function() {
               target_tag += "<ul>";
             }
 
-            target_tag += '<li style="list-style:none;">' + target.name + "</li>";
-            target_tag += '<p class="note">' + "【住所】" + target.adress + "</p>";
-            target_tag += '<p class="note">' + "【営業時間】" + target.time + "</p>";
-            target_tag += '<p class="note">' + "【定休日】" + target.holiday + "</p>";
-            target_tag += '<p class="note">' + "【カードの使用】" + target.card + "</p>";
-            target_tag += '<p class="note">' + "【電話番号】" + target.tell + "</p>";
-            target_tag += '<p class="note">' + "【url】" + target.url + "</p>";
-            target_tag += '<p class="note">' + "【お店の紹介】" +target.notice + "</p>";
+            target_tag += '<p class="notes">' + target.name + "</li>";
+            target_tag += '<p class="note">' + "【住所】" + target.adress + '</p>';
+            target_tag += '<p class="note">' + "【営業時間】" + target.time + '</p>';
+            target_tag += '<p class="note">' + "【定休日】" + target.holiday + '</p>';
+            target_tag += '<p class="note">' + "【カードの使用】" + target.card + '</p>';
+            target_tag += '<p class="note">' + "【電話番号】" + target.tell + '</p>';
+            target_tag += '<p class="note">' + "【url】"+ '<a href="'+ target.url+ '" target="_blank">'+ target.url +'</a></p>';
+            target_tag += '<p class="note">' + "【お店の紹介】" +target.notice + '</p>';
           }
 
           target_tag += "</ul>";
