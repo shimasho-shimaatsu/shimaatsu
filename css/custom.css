@@ -85,6 +85,10 @@ a,a:hover{
 	color: white;
 	text-decoration: none;
 }
+p a:hover{	
+	color: gray;
+	text-decoration: none;
+}
 .accordion-heading .accordion-table{
 	display: table-cell;
 	vertical-align: middle;
@@ -108,13 +112,16 @@ a,a:hover{
 .initials {
 	color: #ffffff;
 }
+.notes{
+	font-size: 15px;
+}
 .note{
-	font-size: 10px;
+	font-size: 12px;
 }
 #help{
 	margin-left: 5px;
 }
 #select_area_title{
 	text-align: center;
-	font-size: 20px;
+	font-size: 22px;
 }
