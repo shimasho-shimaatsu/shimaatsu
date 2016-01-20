@@ -1,5 +1,4 @@
-﻿<style type=text/css> 
-* {
+﻿* {
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -9,6 +8,10 @@ a:link {color:#000;}
 a:visited {color:#000;}
 a:active {color:#000;}
 a:hover {color:#000;}
+
+html,body{
+	height: 100%;
+}
 
 body {
 	font-family: Helvetica, Verdana, Arial, sans-serif;
@@ -20,24 +23,24 @@ body {
 #header img{
 	width: 100%;
 	//height: 20px;
-}	
+}
 #header.img {
 	background: #E73828;
-	
+
 }
 
 section {
-	width: 100%;
+	margin: 5% 5% 1% 5%;
+	width: 90%;
+	height: 55%;
 }
-
-
 
 /* SlideArea
 -------------------------- */
 #slidewrap {
-	margin: 0 auto;
-	padding: 20px 20px;
-	width: 500px;
+	margin: auto;
+	width: 100%;
+	height: 100%;
 	text-align: left;
 	background white;
 }
@@ -46,34 +49,40 @@ section {
 }
 
 #slidemask {
-	width: 500px;
-	height: 375px;
+	margin: auto;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	position: relative;
 }
-
 
 /* PhotoSlideArea
 -------------------------- */
 ul#photo {
 	top: 0;
 	left: 0;
-	width: 23540px;
-	height: 375px;
-	position: absolute;
+	width: 4700%;
+	height: 100%;
+	position: relative;
 }
-ul#photo li {
+ul#photo li{
 	width: 500px;
-	height: 375px;
+	height: 100%;
 	float: left;
 	position: relative;
 }
-
+ul#photo li img{
+	max-width: 500px;
+	width: 500px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
 ul#photo li span {
 	bottom: 0;
 	left: 0;
 	padding: 0 10px;
-	width: 500px;
+	width: 480px;
 	height: 40px;
 	line-height: 30px;
 	color: white;
@@ -82,69 +91,132 @@ ul#photo li span {
 	position: absolute;
 	opacity: 0.5;
 }
+/*480px以上のスクリーン*/
+@media screen and (min-width: 480px) {
+
+	section {
+		margin: 5% 5% 1% 5%;
+		width: 90%;
+		height: 55%;
+	}
+
+
+	#slidewrap {
+		width: 500px;
+		height: 375px;
+		/*text-align: left;*/
+		background white;
+	}
+	#slidewrap ul li {
+		list-style: none;
+	}
+
+	#slidemask {
+		width: 500px;
+		height: 375px;
+		overflow: hidden;
+		position: relative;
+	}
+
+/* PhotoSlideArea
+-------------------------- */
+ul#photo {
+	top: 0;
+	left: 0;
+	width: 4700%;
+	height: 100%;
+	position: relative;
+}
+ul#photo li{
+	width: 500px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+ul#photo li img{
+	max-width: 500px;
+	width: 500px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+ul#photo li span {
+	bottom: 0;
+	left: 0;
+	padding: 0 10px;
+	width: 480px;
+	height: 40px;
+	line-height: 30px;
+	color: white;
+	font-weight: bold;
+	background: #333;
+	position: absolute;
+	opacity: 0.5;
+}
+}
 
 /* CSS3 PhotoSlideAnimation
 -------------------------- */
 @-webkit-keyframes AutoSlidePhoto {
 	0% {left: 0;}
-	2% {left: -540px;}
-	4% {left: -1040px;}
-	6% {left: -1540px;}
-	8% {left: -2040px;}
-	10% {left: -2540px;}
-	
-	12% {left: -3040px;}
-	14% {left: -3540px;}
-	16% {left: -4040px;}
-	18% {left: -4540px;}
-	20% {left: -5040px;}
-	
-	22% {left: -5540px;}
-	24% {left: -6040px;}
-	26% {left: -6540px;}
-	28% {left: -7040px;}
-	30% {left: -7540px;}
-	
-	32% {left: -8040px;}
-	34% {left: -8540px;}
-	36% {left: -9040px;}
-	38% {left: -9540px;}
-	40% {left: -10040px;}
+	2% {left: -500px;}
+	4% {left: -1000px;}
+	6% {left: -1500px;}
+	8% {left: -2000px;}
+	10% {left: -2500px;}
 
-	42% {left: -10540px;}
-	44% {left: -11040px;}
-	46% {left: -11540px;}
-	48% {left: -12040px;}
-	50% {left: -12540px;}
-	
-	52% {left: -13040px;}
-	54% {left: -13540px;}
-	56% {left: -14040px;}
-	58% {left: -14540px;}
-	60% {left: -15040px;}
-	
-	62% {left: -15540px;}
-	64% {left: -16040px;}
-	66% {left: -16540px;}
-	68% {left: -17040px;}
-	70% {left: -17540px;}
+	12% {left: -3000px;}
+	14% {left: -3500px;}
+	16% {left: -4000px;}
+	18% {left: -4500px;}
+	20% {left: -5000px;}
 
-	72% {left: -18040px;}
-	74% {left: -18540px;}
-	76% {left: -19040px;}
-	78% {left: -19540px;}
-	80% {left: -20040px;}
+	22% {left: -5500px;}
+	24% {left: -6000px;}
+	26% {left: -6500px;}
+	28% {left: -7000px;}
+	30% {left: -7500px;}
 
-	82% {left: -20540px;}
-	84% {left: -21040px;}
-	86% {left: -21540px;}
-	88% {left: -22040px;}
-	90% {left: -22540px;}
+	32% {left: -8000px;}
+	34% {left: -8500px;}
+	36% {left: -9000px;}
+	38% {left: -9500px;}
+	40% {left: -10000px;}
 
-	92% {left: -23040px;}
+	42% {left: -10500px;}
+	44% {left: -11000px;}
+	46% {left: -11500px;}
+	48% {left: -12000px;}
+	50% {left: -12500px;}
+
+	52% {left: -13000px;}
+	54% {left: -13500px;}
+	56% {left: -14000px;}
+	58% {left: -14500px;}
+	60% {left: -15000px;}
+
+	62% {left: -15500px;}
+	64% {left: -16000px;}
+	66% {left: -16500px;}
+	68% {left: -17000px;}
+	70% {left: -17500px;}
+
+	72% {left: -18000px;}
+	74% {left: -18500px;}
+	76% {left: -19000px;}
+	78% {left: -19500px;}
+	80% {left: -20000px;}
+
+	82% {left: -20500px;}
+	84% {left: -21000px;}
+	86% {left: -21500px;}
+	88% {left: -22000px;}
+	90% {left: -22500px;}
+
+	92% {left: -23000px;}
 	100% {left: 0;}
-	
-	
+
+
 
 }
 ul#photo {
@@ -153,19 +225,27 @@ ul#photo {
 	-webkit-animation-iteration-count:infinite;
 }
 
-
-ul#button{
-	width: 600px;
-	height: 200px;
-	margin: auto;
-	margin-top: 10px;
-	position: center;
+#button{
+	width: 100%;
 }
-ul#button li{
+
+#button ul{
+	height: 30%;
+	width: 100%;
+	margin: auto;
+	/*margin-top: 10px;*/
+	list-style-type: none;
+	position: absolute;
+}
+#button img{
+	display: inline-block;
+	margin: 1%;
+	width: 31%;
 	float: left;
-	list-style-type:none;		/*リストマーカー無しにする*/
+	list-style-type: none;		/*リストマーカー無しにする*/
 	background-repeat:no-repeat; 	/*背景画像を繰り返さない*/
 }
+
 .float{
 	overflow: hidden;
 }
@@ -174,4 +254,3 @@ ul#button li{
   filter: alpha(opacity=70);
   -ms-filter: "alpha(opacity=70)";
 }
-</style>
