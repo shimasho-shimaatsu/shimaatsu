@@ -93,14 +93,36 @@ ul#photo li span {
   position: absolute;
   opacity: 0.5;
 }
+#button {
+  width: 100%;
+}
+#button ul {
+  height: 30%;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  list-style-type: none;
+  position: absolute;
+}
+#button img {
+  display: inline-block;
+  margin: 1%;
+  width: 31%;
+  float: left;
+  list-style-type: none;
+  /*リストマーカー無しにする*/
+  background-repeat: no-repeat;
+  /*背景画像を繰り返さない*/
+}
 
-/*480px以上のスクリーン*/
+
+/*------------------------------------------------------------------------------480px以上のスクリーン*/
 
 @media screen and (min-width: 480px) {
   section {
     margin: 5% 5% 1% 5%;
     width: 90%;
-    height: 50%;
+    height: 40%;
   }
   #slidewrap {
     width: 500px;
@@ -151,6 +173,119 @@ ul#photo li span {
     background: #333;
     position: absolute;
     opacity: 0.5;
+  }
+  #button {
+    width: 100%;
+  }
+  #button ul {
+    height: 30%;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    list-style-type: none;
+    position: absolute;
+  }
+  #button img {
+    display: inline-block;
+    margin: 1%;
+    width: 31%;
+    float: left;
+    list-style-type: none;
+    /*リストマーカー無しにする*/
+    background-repeat: no-repeat;
+    /*背景画像を繰り返さない*/
+  }
+}
+
+/*------------------------------------------------------------------------------980px以上のスクリーン*/
+
+@media screen and (min-width: 980px) {
+#header{
+  background-color: rgb(250, 50, 30);
+}
+  #header img {
+    width: 50%;
+  }
+  section {
+    margin: 5% 5% 1% 5%;
+    left:10%;
+    width: 500px;
+    height: 375px;
+    float:left;
+  }
+  #slidewrap {
+    width: 500px;
+    height: 375px;
+    /*text-align: left;*/
+    background white;
+  }
+  #slidewrap ul li {
+    list-style: none;
+  }
+  #slidemask {
+    width: 500px;
+    height: 375px;
+    overflow: hidden;
+    position: relative;
+  }
+  /* PhotoSlideArea
+-------------------------- */
+  ul#photo {
+    top: 0;
+    left: 0;
+    width: 23500px;
+    height: 100%;
+    position: relative;
+  }
+  ul#photo li {
+    width: 500px;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+  ul#photo li img {
+    max-width: 500px;
+    width: 500px;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+  ul#photo li span {
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+    width: 480px;
+    height: 40px;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    background: #333;
+    position: absolute;
+    opacity: 0.5;
+  }
+  #button {
+    width: 50%;
+    float:left;
+  }
+  #button ul {
+    height: 60%;
+    width: 40%;
+    margin: auto;
+    top:440px;
+    right:3%;
+    float: left;
+    list-style-type: none;
+    position: absolute;
+  }
+  #button img {
+    display: inline-block;
+    margin: auto;
+    width: 30%;
+    float: left;
+    list-style-type: none;
+    /*リストマーカー無しにする*/
+    background-repeat: no-repeat;
+    /*背景画像を繰り返さない*/
   }
 }
 
@@ -307,27 +442,6 @@ ul#photo {
   -webkit-animation-name: AutoSlidePhoto;
   -webkit-animation-duration: 70s;
   -webkit-animation-iteration-count: infinite;
-}
-#button {
-  width: 100%;
-}
-#button ul {
-  height: 30%;
-  width: 100%;
-  margin: auto;
-  /*margin-top: 10px;*/
-  list-style-type: none;
-  position: absolute;
-}
-#button img {
-  display: inline-block;
-  margin: 1%;
-  width: 31%;
-  float: left;
-  list-style-type: none;
-  /*リストマーカー無しにする*/
-  background-repeat: no-repeat;
-  /*背景画像を繰り返さない*/
 }
 .float {
   overflow: hidden;
