@@ -291,157 +291,164 @@ ul#photo li span {
 
 /* CSS3 PhotoSlideAnimation
 -------------------------- */
-
+/* kouketsu Mod Start */
 @-webkit-keyframes AutoSlidePhoto {
   0% {
     left: 0;
   }
-  2% {
+  3% {
     left: -500px;
   }
-  4% {
+  6% {
     left: -1000px;
   }
-  6% {
+  9% {
     left: -1500px;
   }
-  8% {
+  12% {
     left: -2000px;
   }
-  10% {
+  15% {
     left: -2500px;
   }
-  12% {
+  18% {
     left: -3000px;
   }
-  14% {
+  19% {
     left: -3500px;
   }
-  16% {
+  21% {
     left: -4000px;
   }
-  18% {
+  23% {
     left: -4500px;
   }
-  20% {
+  25% {
     left: -5000px;
   }
-  22% {
+  27% {
     left: -5500px;
   }
-  24% {
+  29% {
     left: -6000px;
   }
-  26% {
+  31% {
     left: -6500px;
   }
-  28% {
+  32% {
     left: -7000px;
   }
-  30% {
+  34% {
     left: -7500px;
   }
-  32% {
+  35% {
     left: -8000px;
   }
-  34% {
+  37% {
     left: -8500px;
   }
-  36% {
+  39% {
     left: -9000px;
   }
-  38% {
+  41% {
     left: -9500px;
   }
-  40% {
+  43% {
     left: -10000px;
   }
-  42% {
+  45% {
     left: -10500px;
   }
-  44% {
+  47% {
     left: -11000px;
   }
-  46% {
+  49% {
     left: -11500px;
   }
-  48% {
+  51% {
     left: -12000px;
   }
-  50% {
+  53% {
     left: -12500px;
   }
-  52% {
+  55% {
     left: -13000px;
   }
-  54% {
+  57% {
     left: -13500px;
   }
-  56% {
+  59% {
     left: -14000px;
   }
-  58% {
+  61% {
     left: -14500px;
   }
-  60% {
+  63% {
     left: -15000px;
   }
-  62% {
+  65% {
     left: -15500px;
   }
-  64% {
+  67% {
     left: -16000px;
   }
-  66% {
+  69% {
     left: -16500px;
   }
-  68% {
+  71% {
     left: -17000px;
   }
-  70% {
+  73% {
     left: -17500px;
   }
-  72% {
+  75% {
     left: -18000px;
   }
-  74% {
+  77% {
     left: -18500px;
   }
-  76% {
+  79% {
     left: -19000px;
   }
-  78% {
+  81% {
     left: -19500px;
   }
-  80% {
+  83% {
     left: -20000px;
   }
-  82% {
+  85% {
     left: -20500px;
   }
-  84% {
+  87% {
     left: -21000px;
   }
-  86% {
+  89% {
     left: -21500px;
   }
-  88% {
+  91% {
     left: -22000px;
   }
-  90% {
+  94% {
     left: -22500px;
   }
-  92% {
+  97% {
     left: -23000px;
   }
   100% {
-    left: 0;
+    left: -23000px;
   }
 }
+/* kouketsu Mod End */
 ul#photo {
   -webkit-animation-name: AutoSlidePhoto;
-  -webkit-animation-duration: 70s;
+  /*70sを150sに　koketsu Mod Start*/
+  -webkit-animation-duration: 150s;
+  /*70sを150sに　koketsu Mod End*/
+  /*スライド開始までの時間を指定　koketsu Add Start*/
+  animation-delay: 2s;
+  /*スライド開始までの時間を指定　koketsu Add End*/
   -webkit-animation-iteration-count: infinite;
+  animation-direction:alternate;
 }
 .float {
   overflow: hidden;
