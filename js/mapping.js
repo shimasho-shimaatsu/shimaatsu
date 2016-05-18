@@ -106,6 +106,7 @@ $(function() {
     }
   });
 });
+drop();
 
 //吹き出しを作成し、mouseOver & Outイベント作成
 function attachMessage(marker, msg, latlng) {
