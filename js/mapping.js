@@ -102,10 +102,6 @@ $(function() {
                     visitinfo.push('<div id="infowindow">' + csvList[i][0] + '</br><a href="tel:' + csvList[i][6] + '">' + csvList[i][6] + '</br><a href="' + csvList[i][7] + '">' + csvList[i][7] + '</a></br><a href="http://maps.google.com/maps?daddr=' + csvList[i][8] + ',' + csvList[i][9] + '&saddr=%E7%8F%BE%E5%9C%A8%E5%9C%B0&dirflg=d&t=m">　現在地からルート検索</a>');
                 };
                 drop();
-
-
-                var bbb = document.getElementById('visitlist');
-                bbb.innerText = datalist[47];
             }
         });
     });
