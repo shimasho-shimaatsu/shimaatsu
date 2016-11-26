@@ -42,7 +42,7 @@ a:hover {
 
 
 #wrapper {
-  height: 90%;
+  height: 100%;
 }
 
 /*-----------------------------------幅が770px以下の場合*/
@@ -50,13 +50,13 @@ a:hover {
 @media only screen and (max-width: 770px) {
 
 		#map {
-		  border: 3px #000000 solid;
+		  /*border: 3px #000000 solid;*/
 		  position: relative;
 		  /*padding-bottom: 60%;
 		  padding-top: 10%;*/
 		  margin: 0 auto;
-		  height: 95%;
-		  width: 95%;
+		  height: 100%;
+		  width: 100%;
 		  overflow: hidden;
 		}
 
@@ -77,12 +77,12 @@ a:hover {
 @media screen and (min-width: 770px){
 
 #map {
-  border: 3px #000000 solid;
+  /*border: 1px #000000 solid;*/
   position: relative;
   /*padding-bottom: 90%;*/
   margin: 0 auto;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
