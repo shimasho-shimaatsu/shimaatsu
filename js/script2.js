@@ -470,19 +470,18 @@ $(function() {
             }
 
             target_tag += '<p class="notes">' + target.name + "</li>";
-            //target_tag += '<p class="note">' + "【住所】" + target.adress + '</p>';
-            target_tag += '<p class="note">' + "【住所】" +'<a href="http://maps.google.com/maps?daddr='+target.adress+'&saddr=%E7%8F%BE%E5%9C%A8%E5%9C%B0&dirflg=d&t=m">　'+target.adress+'</a></p>';
+            target_tag += '<p class="note">' + "【住所】" + target.adress + '</p>';
             target_tag += '<p class="note">' + "【営業時間】" + target.time + '</p>';
             target_tag += '<p class="note">' + "【定休日】" + target.holiday + '</p>';
-            // target_tag += '<p class="note">' + "【カードの使用】" + target.card + '</p>';
-            target_tag += '<p class="note">' + "【電話番号】" + '<a href="tel:'+target.tell+'">'+target.tell+'</a> </p>';
+            target_tag += '<p class="note">' + "【カードの使用】" + target.card + '</p>';
+            target_tag += '<p class="note">' + "【電話番号】" + target.tell + '</p>';
             target_tag += '<p class="note">' + "【url】"+ '<a href="'+ target.url+ '" target="_blank">'+ target.url +'</a></p>';
             target_tag += '<p class="note">' + "【お店の紹介】" +target.notice + '</p>';
           }
 
           target_tag += "</ul>";
 
-
+       
           //あと何日かを計算する処理です。
 
           styleHTML += '#accordion-group' + d_no + '{background-color:  ' + description.background + ';} ';
