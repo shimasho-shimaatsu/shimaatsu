@@ -204,6 +204,12 @@ ul#photo li span {
     /*背景画像を繰り返さない*/
   }
 }
+#footer{
+  position:absolute;
+  right:0;
+  left:0;
+  bottom:2vh;
+}
 
 /*------------------------------------------------------------------------------980px以上のスクリーン*/
 
@@ -295,6 +301,12 @@ ul#photo li span {
     background-repeat: no-repeat;
     /*背景画像を繰り返さない*/
   }
+}
+#footer{
+  position:absolute;
+  right:0;
+  left:0;
+  bottom:2vh;
 }
 
 /* CSS3 PhotoSlideAnimation
