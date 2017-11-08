@@ -1,0 +1,331 @@
+/**/
+
+body{
+    font-family: sans-serif;
+}
+
+input[type="checkbox"].on-off{
+    display: none;
+}
+h2{
+    clear:both;
+}
+
+.menu ul {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  color: #000;
+  font-size: 12px;
+}
+
+.menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="checkbox"].on-off + ul{
+    height: 0;
+    overflow: hidden;
+}
+
+input.on-off:checked + ul{
+    height: 200px;
+}
+
+
+
+.bt {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    /*padding: 0.3em 1em;*/
+    padding: 15px 0px;
+    text-decoration: none;
+    color: #e5171f;
+    border: solid 4.5px #e5171f;
+    border-radius: 2px;
+    transition: .4s;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    /*font-weight: 500;*/
+    width: 47%;
+    height: 80px;
+}
+
+.me {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    /*padding: 0.3em 1em;*/
+    padding: 15px 0px;
+    text-decoration: none;
+    color: #e5171f;
+    border: solid 4.5px #e5171f;
+    border-radius: 2px;
+    transition: .4s;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    /*font-weight: 500;*/
+    width: 47%;
+    height: 80px;
+    margin-top: 6.3%;
+}
+
+.hm {
+    display: inline-block;
+    text-align: center;
+    /*padding: 0.3em 1em;*/
+    padding: 15px 0px;
+    text-decoration: none;
+    color: #e5171f;
+    border: solid 4.5px #e5171f;
+    border-radius: 2px;
+    transition: .4s;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    /*font-weight: 500;*/
+    width: 47%;
+    height: 80px;
+}
+
+li{
+    font-size: 17px;
+}
+
+#clear{
+    clear: both;
+    margin-top: 46%;
+    font-size: 22px;
+}
+
+/*
+.flat_ss { 
+    clear: both;
+    color: #484848;
+    display: inline-block;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    vertical-align: middle;
+    background: #eaeef1;
+    text-decoration: none;
+    margin: 1em;
+}
+
+.flat_ss .iconback{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+.flat_ss .iconback .fa{
+    font-size: 25px;
+    line-height: 50px;
+}
+.flat_ss .iconback .fa{
+    transition: .3s;
+}
+
+.flat_ss .btnttl{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.flat_ss .fb {background:#3b75d4}
+.flat_ss:hover .iconback .fa{
+    -webkit-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+}
+
+*/
+
+
+.button--large1 {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  font-family: "ＭＳ ゴシック",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 60px;
+  text-decoration: none;
+  padding: 4px 20px;
+  font-size: 50px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: #fff;
+  text-shadow: 0 1px none;
+  vertical-align: middle;
+  background-color: #e5171f;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 4px;
+  border: 4px solid #FFFFFF;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  -moz-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  -o-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 80px;
+  padding: 4px 10px;
+  display: block;
+  width: 49.5%;
+}
+.button--large1:active {
+  background-color: #1284ff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  opacity: 0.6;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.button--large1:disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+.button--large1:hover {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.button--large1:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+
+
+.button--large11 {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  font-family: "ＭＳ ゴシック",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 60px;
+  text-decoration: none;
+  padding: 4px 20px;
+  font-size: 50px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: #fff;
+  text-shadow: 0 1px none;
+  vertical-align: middle;
+  background-color: #e5171f;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 4px;
+  border: 4px solid #FFFFFF;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  -moz-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  -o-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
+  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 80px;
+  padding: 4px 20px;
+  display: block;
+  width: 49.5%;
+}
+.button--large11:active {
+  background-color: #1284ff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  opacity: 0.6;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.button--large11:disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+.button--large11:hover {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.button--large11:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}

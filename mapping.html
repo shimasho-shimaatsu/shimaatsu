@@ -4,31 +4,43 @@
 
 <head>
   <title>シマアツ　マップ</title>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="./css/mapping.css">
-
+  <!--link rel="stylesheet" type="text/css" href="./css/mapping.css"-->
   <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="./js/jquery.csv.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/slideshow.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
   <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script> -->
-  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEzvmWQ3NCcEdeqbd3dJ-V_ATt-SIfILQ&callback=start_func"></script> -->
-  <script type="text/javascript" src="./js/geo.js"></script>
-  <script type="text/javascript" src="./js/mappin.js"></script>
-
+  
+  <!--script type="text/javascript" src="./js/mapping.js"></script-->
 </head>
-
 <body>
+<div class="menu"><div id="header">
+        <label for="Panel1"><img src="img/header.png" alt=" "width="100%"></label></div>
+    <input type="checkbox" id="Panel1" class="on-off" />
+    <ul>
+        <li><a href="./index.html">ホーム</a></li>
+        <li><a href="./mapping.html">マップ</a></li>
+        <li><a href="./genre.html">ジャンル</a></li>
+        <li><a href="./area.html">五十音順</a></li>
+    </ul>
+    </div>
 <!-- <body onLoad="drop()"> -->
-<!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=113FhmI5g728H2impmxY23k4FesU" width="100%" height="100%"></iframe> -->
+  <br/>
+  <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1eMG83tDl8GYMnZggnXK_poBWyfA" width="100%" height="450px"></iframe> -->
+  <center><iframe src="https://www.google.com/maps/d/embed?mid=1JrkVbc_Jlh47jLk8UI_qZU6xYfM" width="95%" height="480"></iframe></center>
   <div id="map"></div>
-  <!-- <script>
-    start_func();
-  </script> -->
+  <script>
+    //start_func();
+  </script>
   <!--div id="area_name"></div-->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEzvmWQ3NCcEdeqbd3dJ-V_ATt-SIfILQ&callback=initMap"></script>
-<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEzvmWQ3NCcEdeqbd3dJ-V_ATt-SIfILQ&callback=drop"></script> -->
-<!-- <script>drop()</script> -->
+  <img src="img/jan.png" width="100%">
+    <br /><br />
+    <center><a href="index.html" class="hm">ホーム</a></center>
+    <br /><br />
+
 
 </body>
 
