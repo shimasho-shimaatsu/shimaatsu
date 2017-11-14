@@ -108,6 +108,26 @@ li{
     font-size: 22px;
 }
 
+#c{
+    clear: both;
+}
+
+#ml{
+    float: left;
+    font-size:20px;
+    margin-left: 0.5%;
+    width: 49%;
+    height: 10%;
+}
+
+#mr{
+    float: right;
+    font-size:20px;
+    margin-right: 0.5%;
+    width: 49%;
+    height: 10%;
+}
+
 /*
 .flat_ss { 
     clear: both;
