@@ -19,6 +19,32 @@
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+    
+    <!--新着情報-->
+    <script src="js/feed-reader.js"></script>
+    <script>
+    // CHANGE YOUR URL HERE!
+    var feedUrl = "http://feed.exileed.com/facebook/feed/shimadagaatsui/";
+    $(function() {
+        var feed = new Feed({
+            url: feedUrl
+        });
+            
+        // if (monaca.isIOS) {
+        //     $('.toolbar').css('margin-top', '20px');
+        //     $('.button').css('top', '20px');
+        // }
+        
+        // $('.button').click(function() {
+        //   console.log('Reload.');
+        //   feed.load();
+        // });
+        
+        feed.load();
+    });
+    
+    </script>
+    <!--  -->
    
    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 
@@ -43,6 +69,7 @@
         <li><a href="./mapping.html">マップ</a></li>
         <li><a href="./genre.html">ジャンル</a></li>
         <li><a href="./area.html">五十音順</a></li>
+        <li><a href="./sabisu.html">サービス</a></li>
     </ul>
     
 </div>
@@ -115,6 +142,9 @@
 				<li>
 					<a href="area.html"><img src="img/goju.png" alt="五十音順"></a>
 				</li>
+                <li>
+    				<a href="sabisu.html"><img src="img/sabisu.png" alt="サービス"></a>
+				</li>
 			</ul>
 		</div>
         <!--
@@ -122,7 +152,31 @@
         <a href="http://shimadagaatsui.eshizuoka.jp">ホームページ</a>
         <br /><br />
         <a href="https://www.facebook.com/shimadagaatsui">Facebook</a>
-        </div>-->
+        </div>
+        <div id="clear"></div>-->
+        <br /><br /><br /><br /><br/>
+        
+        <!-- 新着 
+        <a href="facebook.html"><h4>シマアツ新着情報</h4></a>
+        <!--
+        <div class="toolbar">
+            <h4>シマアツ新着情報</h4>
+            <div class="button">Reload</div>
+        </div>
+        
+        <!--
+        <div id="mask">
+            <div id="loading"><img src="loading.gif"></div>
+        </div>
+        -->
+
+        <div class="feed-list">
+        <ul id="feed-list">
+            <span class="box-title">シマアツ新着情報</span>
+        </ul>
+        <p id="error-message"></p>
+        </div>
+        
         <br /><br /><br />
 </body>
 

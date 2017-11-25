@@ -1,4 +1,89 @@
-/**/
+/*新着*/
+.toolbar {
+    padding-top : 10px;
+    padding-bottom : 10px;
+    width: 100%;
+    background-color : #fff;
+    text-align : center;
+    border-bottom : 1px solid #d6d6d6;
+}
+
+.button {
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    border: 1px solid #057cff;
+    border-radius: 4px;
+   background: #fff;
+   padding: 5px 10px 5px 10px;
+   color: #057cff;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+#mask {
+    position: fixed;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+}
+
+/*
+#loading {
+    margin: 0 auto;
+    width: 32px;
+    padding-top: 140px;
+}
+*/
+
+.feed-item {
+    border-bottom: 1px solid #ccc;
+    line-height: 1.2;
+    padding: 6px;
+    height: 30vw;
+}
+.feed-item:nth-child(2n) {
+    background: #f6f3f6;
+}
+
+.feed-item time {
+    font-size: 90%;
+    color: #006ADB;
+}
+
+.feed-list {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #EB3228;
+}
+.feed-list .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    background: #EB3228;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.feed-list p {
+    margin: 0; 
+    padding: 0;
+}
+
+/* */
+
+
 
 body{
     font-family: sans-serif;
@@ -36,8 +121,37 @@ input[type="checkbox"].on-off + ul{
 }
 
 input.on-off:checked + ul{
-    height: 200px;
+    height: 230px;
 }
+
+
+
+.mida {
+position: relative;
+padding-left: 25px;
+font-size: 25px;
+}
+
+.mida:before {
+position: absolute;
+content: '';
+bottom: -3px;
+left: 0;
+width: 0;
+height: 0;
+border: none;
+border-left: solid 15px transparent;
+border-bottom: solid 15px rgb(229, 23, 31);
+}
+.mida:after {
+position: absolute;
+content: '';
+bottom: -3px;
+left: 10px;
+width: 95%;
+border-bottom: solid 3px rgb(229, 23, 31);
+}
+
 
 
 
@@ -104,8 +218,7 @@ li{
 
 #clear{
     clear: both;
-    margin-top: 46%;
-    font-size: 22px;
+    /*margin-top: 26%;*/
 }
 
 #c{

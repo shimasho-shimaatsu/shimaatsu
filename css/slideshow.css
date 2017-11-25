@@ -98,7 +98,7 @@ ul#photo li span {
   width: 100%;
 }
 #button ul {
-  height: 30%;
+  height: 23%;
   width: 100%;
   margin: auto;
   margin-top: 10px;
@@ -108,7 +108,7 @@ ul#photo li span {
 #button img {
   display: inline-block;
   margin: 1%;
-  width: 31%;
+  width: 23%;
   float: left;
   list-style-type: none;
   /*リストマーカー無しにする*/
@@ -265,14 +265,14 @@ ul#photo li span {
     opacity: 0.5;
   }
   #button {
-    width: 50%;
+    width: 23%;
     float:left;
   }
   #button ul {
-    height: 60%;
-    width: 40%;
+    height: 23%;
+    width: 23%;
     margin: auto;
-    top:440px;
+    top:380px;
     right:3%;
     float: left;
     list-style-type: none;
@@ -281,7 +281,7 @@ ul#photo li span {
   #button img {
     display: inline-block;
     margin: auto;
-    width: 30%;
+    width: 23vw;
     float: left;
     list-style-type: none;
     /*リストマーカー無しにする*/
@@ -497,8 +497,11 @@ ul#photo {
 .float {
   overflow: hidden;
 }
+
+/*
 .button a:hover img {
   opacity: 0.7;
   filter: alpha(opacity=70);
   -ms-filter: "alpha(opacity=70)";
 }
+*/
