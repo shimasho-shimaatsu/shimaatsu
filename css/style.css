@@ -22,6 +22,26 @@
    vertical-align: middle;
 }
 
+#body{
+    width: 100%;
+    position: relative;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+}
+
+#container {
+    position: relative;
+    padding-bottom: 15%;
+}
+
+.icb{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+ 
+
 #mask {
     position: fixed;
     opacity: 0.8;
@@ -57,9 +77,11 @@
 
 .feed-list {
     position: relative;
-    margin: 2em 0;
+    margin: 1.8em 0;
     padding: 0.5em 1em;
     border: solid 3px #EB3228;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .feed-list .box-title {
     position: absolute;
@@ -240,51 +262,6 @@ li{
     width: 49%;
     height: 10%;
 }
-
-/*
-.flat_ss { 
-    clear: both;
-    color: #484848;
-    display: inline-block;
-    height: 50px;
-    font-size: 25px;
-    line-height: 50px;
-    vertical-align: middle;
-    background: #eaeef1;
-    text-decoration: none;
-    margin: 1em;
-}
-
-.flat_ss .iconback{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    color: white;
-}
-.flat_ss .iconback .fa{
-    font-size: 25px;
-    line-height: 50px;
-}
-.flat_ss .iconback .fa{
-    transition: .3s;
-}
-
-.flat_ss .btnttl{
-    display: inline-block;
-    width: 120px;
-    text-align: center;
-    vertical-align:middle;
-}
-
-.flat_ss .fb {background:#3b75d4}
-.flat_ss:hover .iconback .fa{
-    -webkit-transform: rotateX(360deg);
-    -ms-transform: rotateX(360deg);
-    transform: rotateX(360deg);
-}
-
-*/
 
 
 .button--large1 {

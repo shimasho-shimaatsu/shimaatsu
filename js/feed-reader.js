@@ -1,6 +1,8 @@
 /**
  * Feed class
  */
+ 
+ //Feed
 var Feed = (function() {
     
     var Feed = function(options) {
@@ -43,9 +45,17 @@ var Feed = (function() {
 
                 // Display RSS contents
                 var $rss = $(data);
+                // $rss.find('item').each(function() {
+                //     var item = this;
+                //     $(self.listEl).before(self.createListElement(item));
+                // });
+                var cn = 0;
                 $rss.find('item').each(function() {
+                    if(cn==0){
                     var item = this;
                     $(self.listEl).before(self.createListElement(item));
+                    }
+                    cn += 1;
                 });
             },
             error: function() {

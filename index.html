@@ -2,9 +2,8 @@
 <html lang="ja">
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-	<meta property="og:title" content="シマアツアプリ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:title" content="シマアツアプリ" />
 	<meta property="og:type" content="product" />
 	<meta property="og:url" content="http://shimasho-shimaatsu.github.io/shimaatsu/index.html" />
 	<meta property="og:description" content="島田商業高校が作ったシマアツアプリは、シマアツの加盟店についての情報を発信しています。" />
@@ -23,161 +22,138 @@
     <!--新着情報-->
     <script src="js/feed-reader.js"></script>
     <script>
-    // CHANGE YOUR URL HERE!
-    var feedUrl = "http://feed.exileed.com/facebook/feed/shimadagaatsui/";
+    var feedUrl = "http://shimadagaatsui.eshizuoka.jp/index.rdf";
+    //"http://www.facebook.com/feeds/page.php?id=&format=rss20";
     $(function() {
         var feed = new Feed({
             url: feedUrl
         });
-            
-        // if (monaca.isIOS) {
-        //     $('.toolbar').css('margin-top', '20px');
-        //     $('.button').css('top', '20px');
-        // }
-        
-        // $('.button').click(function() {
-        //   console.log('Reload.');
-        //   feed.load();
-        // });
         
         feed.load();
     });
-    
     </script>
-    <!--  -->
-   
-   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 
-<title>シマアツアプリ</title>
+    <title>シマアツアプリ</title>
     <script type="text/javascript">
-    $(function(){
-        $("ul.menu li").hover(function(){
-        	$("ul.sub:not(:animated)", this).slideDown();
-		}, function(){
-			$("ul.sub",this).slideUp();
-		});
-	});
-</script>
+        $(function(){
+            $("ul.menu li").hover(function(){
+        	    $("ul.sub:not(:animated)", this).slideDown();
+		    }, function(){
+			    $("ul.sub",this).slideUp();
+		    });
+	    });
+    </script>
 </head>
 
+
 <body>
-	<div class="menu"><div id="header">
-        <label for="Panel1"><img src="img/header.png" alt=" "width="100%"></label></div>
-    <input type="checkbox" id="Panel1" class="on-off" />
-    <ul>
-        <li><a href="./index.html">ホーム</a></li>
-        <li><a href="./mapping.html">マップ</a></li>
-        <li><a href="./genre.html">ジャンル</a></li>
-        <li><a href="./area.html">五十音順</a></li>
-        <li><a href="./sabisu.html">サービス</a></li>
-    </ul>
-    
-</div>
-
-		<section>
-			<div id="slidewrap">
-				<div id="slidemask">
-					<ul id="photo">
-						<li id="slide01 "><img src="img/shimaatu/thisiscafe.jpg " alt="This is Cafe 新金谷駅店"><span>【This is Cafe 新金谷駅店】</span></li>
-						<!-- <li id="slide02 "><img src="img/shimaatu/アルペンローゼ.jpg " alt="パティスリー アルペンローゼ"><span>【パティスリー アルペンローゼ】</span></li> -->
-						<!-- <li id="slide03 "><img src="img/shimaatu/エポウ.jpg " alt="野菜とパウンドケーキの店　エポウ"><span>【野菜とパウンドケーキの店　エポウ】</span></li> -->
-						<!-- <li id="slide04 "><img src="img/shimaatu/シマダソライロビル.jpg " alt="シマダソライロビル"><span>【シマダソライロビル】</span></li> -->
-						<li id="slide05 "><img src="img/shimaatu/tanaka.png " alt="クルマ買取・輸出カースタ/田中石油"><span>【クルマ買取・輸出カースタ/田中石油】</span></li>
-						<!-- <li id="slide06 "><img src="img/shimaatu/ガーデンテイム.jpg " alt="Plus Style Garden Teimu"><span>【Plus Style Garden Teimu】</span></li> -->
-						<li id="slide07 "><img src="img/shimaatu/cafezeal.png " alt="Cafe Zeal"><span>【Cafe Zeal】</span></li>
-						<!-- <li id="slide08 "><img src="img/shimaatu/カモマイル.jpg " alt="花と香りの店 カモマイル"><span>【花と香りの店 カモマイル】</span></li> -->
-						<!-- <li id="slide09 "><img src="img/shimaatu/かりん.jpg " alt="ごはん cafe美・菜・健 かりん"><span>【ごはん cafe美・菜・健 かりん】</span></li> -->
-						<!-- <li id="slide10 "><img src="img/shimaatu/クーパン.jpg " alt="ku-pan"><span>【ku-pan】</span></li> -->
-					    <li id="slide11 "><img src="img/shimaatu/sasuki.png " alt="お茶のさすき園"><span>【お茶のさすき園】</span></li>
-						<li id="slide12 "><img src="img/shimaatu/zeal.png " alt="Zeal"><span>【Zeal】</span></li>
-						<li id="slide13 "><img src="img/shimaatu/shibamoku.png " alt="シバモクショップ"><span>【シバモクショップ】</span></li>
-						<li id="slide14 "><img src="img/shimaatu/shimari.png " alt="シマダリフォーム"><span>【シマダリフォーム】</span></li>
-						<!-- <li id="slide15 "><img src="img/shimaatu/スーベニアストア.jpg " alt="&mm SOUVENIR STORE"><span>【&mm SOUVENIR STORE】</span></li> -->
-						<!-- <li id="slide16 "><img src="img/shimaatu/ダインプレイス.jpg " alt="din/g.place"><span>【din/g.place】</span></li> -->
-						<li id="slide17 "><img src="img/shimaatu/tabako.png " alt="お食事処たばこ屋"><span>【お食事処たばこ屋】</span></li>
-						<li id="slide18 "><img src="img/shimaatu/totoro.png " alt="とろろ屋ととろ"><span>【とろろ屋ととろ】</span></li>
-						<!-- <li id="slide19 "><img src="img/shimaatu/とりっこホシノ.jpg " alt="とりっこ倶楽部ホシノ"><span>【とりっこ倶楽部ホシノ】</span></li> -->
-						<!-- <li id="slide20 "><img src="img/shimaatu/トントゥ.jpg " alt="お花屋　TONTTU"><span>【お花屋　TONTTU】</span></li> -->
-						<li id="slide21 "><img src="img/shimaatu/naruokaci.png " alt="なるおかサイクル"><span>【なるおかサイクル】</span></li>
-						<!-- <li id="slide22 "><img src="img/shimaatu/パームスクラブ.jpg " alt="パームスクラブ"><span>【パームスクラブ】</span></li> -->
-						<li id="slide23 "><img src="img/shimaatu/btnoe.png " alt="ビューティスタジオ ノエ"><span>【ビューティスタジオ ノエ】</span></li>
-						<!-- <li id="slide24 "><img src="img/shimaatu/フォルムス.jpg " alt="インテリアショップFORMS"><span>【インテリアショップFORMS】</span></li> -->
-						<li id="slide25 "><img src="img/shimaatu/hujizen.png " alt="ふじ膳"><span>【ふじ膳】</span></li>
-						<li id="slide26 "><img src="img/shimaatu/popuri.png " alt="ポプリ"><span>【ポプリ】</span></li>
-						<li id="slide27 "><img src="img/shimaatu/maruie.png " alt="マルイエ醤油川根本家"><span>【マルイエ醤油川根本家】</span></li>
-						<!-- <li id="slide28 "><img src="img/shimaatu/モリサワ.jpg " alt="写真工房モリサワ"><span>【写真工房モリサワ】</span></li>-->
-						<!-- <li id="slide29 "><img src="img/shimaatu/リモージュ.jpg " alt="ケーキ工房リモージュ"><span>【ケーキ工房リモージュ】</span></li> -->
-					    <li id="slide30 "><img src="img/shimaatu/roseshop.png " alt="ローズショップ"><span>【ローズショップ】</span></li>
-						<li id="slide31 "><img src="img/shimaatu/isohuji.png " alt="割烹 磯藤"><span>【割烹 磯藤】</span></li>
-						<!-- <li id="slide32 "><img src="img/shimaatu/加藤菓子舗.jpg " alt="加藤菓子舗"><span>【加藤菓子舗】</span></li> -->
-						<li id="slide33 "><img src="img/shimaatu/hujita.png " alt="海産物処ふじ田"><span>【海産物処ふじ田】</span></li>
-						<!-- <li id="slide34 "><img src="img/shimaatu/吉村鯛焼き.jpg " alt="吉村鯛焼屋"><span>【吉村鯛焼屋】</span></li> -->
-						<li id="slide35 "><img src="img/shimaatu/uoichi.png " alt="魚一"><span>【魚一】</span></li>
-						<li id="slide36 "><img src="img/shimaatu/kuwa.png " alt="桑原精肉店"><span>【桑原精肉店】</span></li>
-						<li id="slide37 "><img src="img/shimaatu/syaraku.png " alt="味わい処 座楽"><span>【味わい処 座楽】</span></li>
-						<li id="slide38 "><img src="img/shimaatu/tokeimuramatsu.png " alt="時計屋さん☆むらまつ"><span>【時計屋さん☆むらまつ】</span></li>
-						<!-- <li id="slide39 "><img src="img/shimaatu/寝装寝具みやち.jpg " alt="寝装寝具みやち"><span>【寝装寝具みやち】</span></li> -->
-						<!-- <li id="slide40 "><img src="img/shimaatu/西東石油.jpg " alt="西東石油　島田本通SS"><span>【西東石油　島田本通SS】</span></li> -->
-						<li id="slide41 "><img src="img/shimaatu/sabou.png " alt="茶房 遊"><span>【"茶房 " "遊 "】</span></li>
-						<li id="slide42 "><img src="img/shimaatu/nakaya.png " alt="中屋酒店"><span>【中屋酒店】</span></li>
-						<li id="slide43 "><img src="img/shimaatu/asahienn.png " alt="朝日園 駅前本店"><span>【朝日園 駅前本店】</span></li>
-						<li id="slide44 "><img src="img/shimaatu/okada.png " alt="文具・事務機のオカダ"><span>【文具・事務機のオカダ】</span></li>
-						<li id="slide45 "><img src="img/shimaatu/kazariya.png " alt="かざりや平林"><span>【かざりや平林】</span></li>
-						<!-- <li id="slide46 "><img src="img/shimaatu/麺大鷹.jpg " alt="麺 大鷹"><span>【麺 大鷹】</span></li> -->
-						<li id="slide47 "><img src="img/shimaatu/ryugetsudo.png " alt="龍月堂"><span>【龍月堂】</span></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-
-		<div id="button">
-			<ul>
-				<li>
-					<a href="mapping.html"><img src="img/map.png" alt="マップ"></a>
-				</li>
-				<li>
-					<a href="genre.html"><img src="img/ja.png" alt="ジャンル"></a>
-				</li>
-				<li>
-					<a href="area.html"><img src="img/goju.png" alt="五十音順"></a>
-				</li>
-                <li>
-    				<a href="sabisu.html"><img src="img/sabisu.png" alt="サービス"></a>
-				</li>
-			</ul>
-		</div>
-        <!--
-        <div id="clear">
-        <a href="http://shimadagaatsui.eshizuoka.jp">ホームページ</a>
-        <br /><br />
-        <a href="https://www.facebook.com/shimadagaatsui">Facebook</a>
-        </div>
-        <div id="clear"></div>-->
-        <br /><br /><br /><br /><br/>
         
-        <!-- 新着 
-        <a href="facebook.html"><h4>シマアツ新着情報</h4></a>
-        <!--
-        <div class="toolbar">
-            <h4>シマアツ新着情報</h4>
-            <div class="button">Reload</div>
-        </div>
-        
-        <!--
-        <div id="mask">
-            <div id="loading"><img src="loading.gif"></div>
+        <img src="img/header.png" alt=" "width="100%">
+    	<!--
+        <div class="menu">
+            <div id="header">
+                <label for="Panel1"></label>
+            </div>
+            <input type="checkbox" id="Panel1" class="on-off" />
+            <ul>
+                <li><a href="./index.html">ホーム</a></li>
+                <li><a href="./mapping.html">マップ</a></li>
+                <li><a href="./genre.html">ジャンル</a></li>
+                <li><a href="./area.html">五十音順</a></li>
+                <li><a href="./sabisu.html">サービス</a></li>
+            </ul>
         </div>
         -->
+        
+	    <section>
+    		<div id="slidewrap">
+	    		<div id="slidemask">
+	    			<ul id="photo">
+	    				<li id="slide01 "><img src="img/shimaatu/thisiscafe.jpg " alt="This is Cafe 新金谷駅店"><span>【This is Cafe 新金谷駅店】</span></li>
+	    				<!-- <li id="slide02 "><img src="img/shimaatu/アルペンローゼ.jpg " alt="パティスリー アルペンローゼ"><span>【パティスリー アルペンローゼ】</span></li> -->
+	    				<!-- <li id="slide03 "><img src="img/shimaatu/エポウ.jpg " alt="野菜とパウンドケーキの店　エポウ"><span>【野菜とパウンドケーキの店　エポウ】</span></li> -->
+	    				<!-- <li id="slide04 "><img src="img/shimaatu/シマダソライロビル.jpg " alt="シマダソライロビル"><span>【シマダソライロビル】</span></li> -->
+	    				<li id="slide05 "><img src="img/shimaatu/tanaka.png " alt="クルマ買取・輸出カースタ/田中石油"><span>【クルマ買取・輸出カースタ/田中石油】</span></li>
+	    				<!-- <li id="slide06 "><img src="img/shimaatu/ガーデンテイム.jpg " alt="Plus Style Garden Teimu"><span>【Plus Style Garden Teimu】</span></li> -->
+	    				<li id="slide07 "><img src="img/shimaatu/cafezeal.png " alt="Cafe Zeal"><span>【Cafe Zeal】</span></li>
+	    				<!-- <li id="slide08 "><img src="img/shimaatu/カモマイル.jpg " alt="花と香りの店 カモマイル"><span>【花と香りの店 カモマイル】</span></li> -->
+	    				<!-- <li id="slide09 "><img src="img/shimaatu/かりん.jpg " alt="ごはん cafe美・菜・健 かりん"><span>【ごはん cafe美・菜・健 かりん】</span></li> -->
+	    				<!-- <li id="slide10 "><img src="img/shimaatu/クーパン.jpg " alt="ku-pan"><span>【ku-pan】</span></li> -->
+	    			    <li id="slide11 "><img src="img/shimaatu/sasuki.png " alt="お茶のさすき園"><span>【お茶のさすき園】</span></li>
+	    				<li id="slide12 "><img src="img/shimaatu/zeal.png " alt="Zeal"><span>【Zeal】</span></li>
+	    				<li id="slide13 "><img src="img/shimaatu/shibamoku.png " alt="シバモクショップ"><span>【シバモクショップ】</span></li>
+	    				<li id="slide14 "><img src="img/shimaatu/shimari.png " alt="シマダリフォーム"><span>【シマダリフォーム】</span></li>
+	    				<!-- <li id="slide15 "><img src="img/shimaatu/スーベニアストア.jpg " alt="&mm SOUVENIR STORE"><span>【&mm SOUVENIR STORE】</span></li> -->
+	    				<!-- <li id="slide16 "><img src="img/shimaatu/ダインプレイス.jpg " alt="din/g.place"><span>【din/g.place】</span></li> -->
+	    				<li id="slide17 "><img src="img/shimaatu/tabako.png " alt="お食事処たばこ屋"><span>【お食事処たばこ屋】</span></li>
+	    				<li id="slide18 "><img src="img/shimaatu/totoro.png " alt="とろろ屋ととろ"><span>【とろろ屋ととろ】</span></li>
+	    				<!-- <li id="slide19 "><img src="img/shimaatu/とりっこホシノ.jpg " alt="とりっこ倶楽部ホシノ"><span>【とりっこ倶楽部ホシノ】</span></li> -->
+	     				<!-- <li id="slide20 "><img src="img/shimaatu/トントゥ.jpg " alt="お花屋　TONTTU"><span>【お花屋　TONTTU】</span></li> -->
+		    			<li id="slide21 "><img src="img/shimaatu/naruokaci.png " alt="なるおかサイクル"><span>【なるおかサイクル】</span></li>
+		    			<!-- <li id="slide22 "><img src="img/shimaatu/パームスクラブ.jpg " alt="パームスクラブ"><span>【パームスクラブ】</span></li> -->
+		    			<li id="slide23 "><img src="img/shimaatu/btnoe.png " alt="ビューティスタジオ ノエ"><span>【ビューティスタジオ ノエ】</span></li>
+		    			<!-- <li id="slide24 "><img src="img/shimaatu/フォルムス.jpg " alt="インテリアショップFORMS"><span>【インテリアショップFORMS】</span></li> -->
+		    			<li id="slide25 "><img src="img/shimaatu/hujizen.png " alt="ふじ膳"><span>【ふじ膳】</span></li>
+		    			<li id="slide26 "><img src="img/shimaatu/popuri.png " alt="ポプリ"><span>【ポプリ】</span></li>
+		    			<li id="slide27 "><img src="img/shimaatu/maruie.png " alt="マルイエ醤油川根本家"><span>【マルイエ醤油川根本家】</span></li>
+		    			<!-- <li id="slide28 "><img src="img/shimaatu/モリサワ.jpg " alt="写真工房モリサワ"><span>【写真工房モリサワ】</span></li>-->
+		    			<!-- <li id="slide29 "><img src="img/shimaatu/リモージュ.jpg " alt="ケーキ工房リモージュ"><span>【ケーキ工房リモージュ】</span></li> -->
+		    		    <li id="slide30 "><img src="img/shimaatu/roseshop.png " alt="ローズショップ"><span>【ローズショップ】</span></li>
+		    			<li id="slide31 "><img src="img/shimaatu/isohuji.png " alt="割烹 磯藤"><span>【割烹 磯藤】</span></li>
+		    			<!-- <li id="slide32 "><img src="img/shimaatu/加藤菓子舗.jpg " alt="加藤菓子舗"><span>【加藤菓子舗】</span></li> -->
+		    			<li id="slide33 "><img src="img/shimaatu/hujita.png " alt="海産物処ふじ田"><span>【海産物処ふじ田】</span></li>
+		    			<!-- <li id="slide34 "><img src="img/shimaatu/吉村鯛焼き.jpg " alt="吉村鯛焼屋"><span>【吉村鯛焼屋】</span></li> -->
+		    			<li id="slide35 "><img src="img/shimaatu/uoichi.png " alt="魚一"><span>【魚一】</span></li>
+		    			<li id="slide36 "><img src="img/shimaatu/kuwa.png " alt="桑原精肉店"><span>【桑原精肉店】</span></li>
+		    		    <li id="slide37 "><img src="img/shimaatu/syaraku.png " alt="味わい処 座楽"><span>【味わい処 座楽】</span></li>
+		    			<li id="slide38 "><img src="img/shimaatu/tokeimuramatsu.png " alt="時計屋さん☆むらまつ"><span>【時計屋さん☆むらまつ】</span></li>
+		    			<!-- <li id="slide39 "><img src="img/shimaatu/寝装寝具みやち.jpg " alt="寝装寝具みやち"><span>【寝装寝具みやち】</span></li> -->
+		    			<!-- <li id="slide40 "><img src="img/shimaatu/西東石油.jpg " alt="西東石油　島田本通SS"><span>【西東石油　島田本通SS】</span></li> -->
+		    			<li id="slide41 "><img src="img/shimaatu/sabou.png " alt="茶房 遊"><span>【"茶房 " "遊 "】</span></li>
+		    			<li id="slide42 "><img src="img/shimaatu/nakaya.png " alt="中屋酒店"><span>【中屋酒店】</span></li>
+		    			<li id="slide43 "><img src="img/shimaatu/asahienn.png " alt="朝日園 駅前本店"><span>【朝日園 駅前本店】</span></li>
+			    		<li id="slide44 "><img src="img/shimaatu/okada.png " alt="文具・事務機のオカダ"><span>【文具・事務機のオカダ】</span></li>
+	    				<li id="slide45 "><img src="img/shimaatu/kazariya.png " alt="かざりや平林"><span>【かざりや平林】</span></li>
+	    				<!-- <li id="slide46 "><img src="img/shimaatu/麺大鷹.jpg " alt="麺 大鷹"><span>【麺 大鷹】</span></li> -->
+	    				<li id="slide47 "><img src="img/shimaatu/ryugetsudo.png " alt="龍月堂"><span>【龍月堂】</span></li>
+	    			</ul>
+	    		</div>
+	    	</div>
+	    </section>
+            
+        <!--
+    	<div id="button">
+    		<ul>
+    			<li>
+	    			<a href="mapping.html"><img src="img/map.png" alt="マップ"></a>
+	        	</li>
+	    		<li>
+	    			<a href="genre.html"><img src="img/ja.png" alt="ジャンル"></a>
+	    		</li>
+	    		<li>
+	    			<a href="area.html"><img src="img/goju.png" alt="五十音順"></a>
+	    		</li>
+                <li>
+	    			<a href="sabisu.html"><img src="img/sabisu.png" alt="サービス"></a>
+	    		</li>
+            </ul>
+	    </div>
+        -->
+        
 
         <div class="feed-list">
-        <ul id="feed-list">
             <span class="box-title">シマアツ新着情報</span>
-        </ul>
-        <p id="error-message"></p>
+            <ul id="feed-list"></ul>
+            <p id="error-message"></p>
         </div>
         
-        <br /><br /><br />
+        <div class="icb">
+            <a href="index.html"><img src="img/button/home.png" width="20%"></a><a href="mapping.html"><img src="img/button/mp.png" width="20%"></a><a href="genre.html"><img src="img/button/jan.png" width="20%"></a><a href="area.html"><img src="img/button/go.png" width="20%"></a><a href="favo.html"><img src="img/button/hat.png" width="20%"></a>
+        </div>
+    
+    
 </body>
 
 </html>

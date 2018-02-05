@@ -622,6 +622,7 @@ $(function() {
               
               //ローカルストレージ（チェックボックス）
                 hhh[x][0] = aa[x][1];
+                localStorage.setItem("goju"+x,hhh[x][0]);
                 hhh[x][1] = localStorage.getItem("chec" + x + "_checked");
                 //a.innerHTML += hh[x][0] + "<br/>" + hh[x][1];
                 
@@ -675,6 +676,7 @@ $(function() {
                     }
                 }
                 hhh[x][0] = kk[x][1];
+                localStorage.setItem("goju"+x,hhh[x][0]);
                 hhh[x][1] = localStorage.getItem("chec" + x + "_checked");
             }
         }
@@ -714,6 +716,7 @@ $(function() {
                     }
                 }
                 hhh[a][0] = ss[a][1];
+                localStorage.setItem("goju"+a,hhh[a][0]);
                 hhh[a][1] = localStorage.getItem("chec" + a + "_checked");
             }
         }
@@ -753,6 +756,7 @@ $(function() {
                     }
                 }
                 hhh[a][0] = tt[a][1];
+                localStorage.setItem("goju"+a,hhh[a][0]);
                 hhh[a][1] = localStorage.getItem("chec" + a + "_checked");
             }
         }
@@ -792,6 +796,7 @@ $(function() {
                     }
                 }
                 hhh[a][0] = nn[a][1];
+                localStorage.setItem("goju"+a,hhh[a][0]);
                 hhh[a][1] = localStorage.getItem("chec" + a + "_checked");
             }
         }
@@ -831,6 +836,7 @@ $(function() {
                     }
                 }
                 hhh[a][0] = hh[a][1];
+                localStorage.setItem("goju"+a,hhh[a][0]);
                 hhh[a][1] = localStorage.getItem("chec" + a + "_checked");
             }
         }
@@ -870,6 +876,7 @@ $(function() {
                     }
                 }
                 hhh[a][0] = mm[a][1];
+                localStorage.setItem("goju"+a,hhh[a][0]);
                 hhh[a][1] = localStorage.getItem("chec" + a + "_checked");
             }
         }
@@ -932,6 +939,7 @@ $(function() {
                     }
                 }
                 hhh[a][0] = rr[a][1];
+                localStorage.setItem("goju"+a,hhh[a][0]);
                 hhh[a][1] = localStorage.getItem("chec" + a + "_checked");
             }
         }
@@ -970,6 +978,7 @@ $(function() {
                     }
                 }
                 hhh[a][0] = ww[a][1];
+                localStorage.setItem("goju"+a,hhh[a][0]);
                 hhh[a][1] = localStorage.getItem("chec" + a + "_checked");
             }
         }
