@@ -1,23 +1,27 @@
-var at1,at2,at3,at4,at5,at6,at7,at8,at9,at10;
-var at11,at12,at13,at14,at15,at16,at17,at18,at19,at20;
+
+
+//お気に入りを管理するlocalStorage用変数
+var at1=0,at2=0,at3=0,at4=0,at5=0,at6=0,at7=0,at8=0,at9=0,at10=0;
+var at11=0,at12=0,at13=0,at14=0,at15=0,at16=0,at17=0,at18=0,at19=0,at20=0;
 var at21,at22,at23,at24,at25,at26,at27,at28,at29,at30;
 var at31,at32,at33,at34,at35,at36,at37,at38,at39,at40;
-var at41,at42,at43,at44;
+var at41,at42,at43,at44,at45,at46,at47,at48,at49,at50;
+var at51,at52,at53,at54,at55,at56;
 
+
+//ハートがタップされたら（お気に入り）
 function te1(at1){
-    at1=localStorage.getItem("heck1_checked");
-    if(at1==1){
+    at1=localStorage.getItem("heck1_checked");  //取得したlocalStorageの値をat1へ
+    if(at1==1){ //at1=1だったら（すでにお気に入り登録されていたら）
         at1=0;
-        document.getElementById('check1').src='img/wht.png';
-        
+        document.getElementById('check1').src='img/wht.png';    //ハートを白抜きにする
     }
-    else{
+    else{   //お気に入り登録されていなかったら
         at1=1;
-        document.getElementById('check1').src='img/wht2.png';
+        document.getElementById('check1').src='img/wht2.png';   //ハートに色をつける
     }
-    localStorage.setItem("heck1_checked",at1);
+    localStorage.setItem("heck1_checked",at1);  //localStorageに変更した値を保存
 }
-
 function te2(at2){
     at2=localStorage.getItem("heck2_checked");
     if(at2==1){
@@ -30,7 +34,6 @@ function te2(at2){
     }
     localStorage.setItem("heck2_checked",at2);
 }
-
 function te3(at3){
     at3=localStorage.getItem("heck3_checked");
     if(at3==1){
@@ -43,7 +46,6 @@ function te3(at3){
     }
     localStorage.setItem("heck3_checked",at3);
 }
-
 function te4(at4){
     at4=localStorage.getItem("heck4_checked");
     if(at4==1){
@@ -56,7 +58,6 @@ function te4(at4){
     }
     localStorage.setItem("heck4_checked",at4);
 }
-
 function te5(at5){
     at5=localStorage.getItem("heck5_checked");
     if(at5==1){
@@ -69,7 +70,6 @@ function te5(at5){
     }
     localStorage.setItem("heck5_checked",at5);
 }
-
 function te6(at6){
     at6=localStorage.getItem("heck6_checked");
     if(at6==1){
@@ -82,7 +82,6 @@ function te6(at6){
     }
     localStorage.setItem("heck6_checked",at6);
 }
-
 function te7(at7){
     at7=localStorage.getItem("heck7_checked");
     if(at7==1){
@@ -95,7 +94,6 @@ function te7(at7){
     }
     localStorage.setItem("heck7_checked",at7);
 }
-
 function te8(at8){
     at8=localStorage.getItem("heck8_checked");
     if(at8==1){
@@ -108,7 +106,6 @@ function te8(at8){
     }
     localStorage.setItem("heck8_checked",at8);
 }
-
 function te9(at9){
     at9=localStorage.getItem("heck9_checked");
     if(at9==1){
@@ -121,7 +118,6 @@ function te9(at9){
     }
     localStorage.setItem("heck9_checked",at9);
 }
-
 function te10(at10){
     at10=localStorage.getItem("heck10_checked");
     if(at10==1){
@@ -134,7 +130,6 @@ function te10(at10){
     }
     localStorage.setItem("heck10_checked",at10);
 }
-
 function te11(at11){
     at11=localStorage.getItem("heck11_checked");
     if(at11==1){
@@ -147,7 +142,6 @@ function te11(at11){
     }
     localStorage.setItem("heck11_checked",at11);
 }
-
 function te12(at12){
     at12=localStorage.getItem("heck12_checked");
     if(at12==1){
@@ -160,7 +154,6 @@ function te12(at12){
     }
     localStorage.setItem("heck12_checked",at12);
 }
-
 function te13(at13){
     at13=localStorage.getItem("heck13_checked");
     if(at13==1){
@@ -173,7 +166,6 @@ function te13(at13){
     }
     localStorage.setItem("heck13_checked",at13);
 }
-
 function te14(at14){
     at14=localStorage.getItem("heck14_checked");
     if(at14==1){
@@ -186,7 +178,6 @@ function te14(at14){
     }
     localStorage.setItem("heck14_checked",at14);
 }
-
 function te15(at15){
     at15=localStorage.getItem("heck15_checked");
     if(at15==1){
@@ -199,7 +190,6 @@ function te15(at15){
     }
     localStorage.setItem("heck15_checked",at15);
 }
-
 function te16(at16){
     at16=localStorage.getItem("heck16_checked");
     if(at16==1){
@@ -212,7 +202,6 @@ function te16(at16){
     }
     localStorage.setItem("heck16_checked",at16);
 }
-
 function te17(at17){
     at17=localStorage.getItem("heck17_checked");
     if(at17==1){
@@ -225,7 +214,6 @@ function te17(at17){
     }
     localStorage.setItem("heck17_checked",at17);
 }
-
 function te18(at18){
     at18=localStorage.getItem("heck18_checked");
     if(at18==1){
@@ -238,7 +226,6 @@ function te18(at18){
     }
     localStorage.setItem("heck18_checked",at18);
 }
-
 function te19(at19){
     at19=localStorage.getItem("heck19_checked");
     if(at19==1){
@@ -537,7 +524,7 @@ function te43(at43){
         at43=1;
         document.getElementById('check43').src='img/wht2.png';
     }
-    localStorage.setItem("heck43_checked",at43);
+    localStorage.setItem("heck40_checked",at43);
 }
 function te44(at44){
     at44=localStorage.getItem("heck44_checked");
@@ -549,67 +536,232 @@ function te44(at44){
         at44=1;
         document.getElementById('check44').src='img/wht2.png';
     }
-    localStorage.setItem("heck44_checked",at44);
+    localStorage.setItem("heck40_checked",at44);
+}
+function te45(at45){
+    at45=localStorage.getItem("heck45_checked");
+    if(at45==1){
+        at45=0;
+        document.getElementById('check45').src='img/wht.png';
+    }
+    else{
+        at45=1;
+        document.getElementById('check45').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at45);
+}
+function te46(at46){
+    at46=localStorage.getItem("heck46_checked");
+    if(at46==1){
+        at46=0;
+        document.getElementById('check46').src='img/wht.png';
+    }
+    else{
+        at46=1;
+        document.getElementById('check46').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at46);
+}
+function te47(at47){
+    at47=localStorage.getItem("heck47_checked");
+    if(at47==1){
+        at47=0;
+        document.getElementById('check47').src='img/wht.png';
+    }
+    else{
+        at47=1;
+        document.getElementById('check47').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at47);
+}
+function te48(at48){
+    at48=localStorage.getItem("heck48_checked");
+    if(at48==1){
+        at48=0;
+        document.getElementById('check48').src='img/wht.png';
+    }
+    else{
+        at48=1;
+        document.getElementById('check48').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at48);
+}
+function te49(at49){
+    at49=localStorage.getItem("heck49_checked");
+    if(at49==1){
+        at49=0;
+        document.getElementById('check49').src='img/wht.png';
+    }
+    else{
+        at49=1;
+        document.getElementById('check49').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at49);
+}
+function te50(at50){
+    at50=localStorage.getItem("heck50_checked");
+    if(at50==1){
+        at50=0;
+        document.getElementById('check50').src='img/wht.png';
+    }
+    else{
+        at50=1;
+        document.getElementById('check50').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at50);
+}
+function te51(at51){
+    at51=localStorage.getItem("heck51_checked");
+    if(at51==1){
+        at51=0;
+        document.getElementById('check51').src='img/wht.png';
+    }
+    else{
+        at51=1;
+        document.getElementById('check51').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at51);
+}
+function te52(at52){
+    at52=localStorage.getItem("heck52_checked");
+    if(at52==1){
+        at52=0;
+        document.getElementById('check52').src='img/wht.png';
+    }
+    else{
+        at52=1;
+        document.getElementById('check52').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at52);
+}
+function te53(at53){
+    at53=localStorage.getItem("heck53_checked");
+    if(at53==1){
+        at53=0;
+        document.getElementById('check53').src='img/wht.png';
+    }
+    else{
+        at53=1;
+        document.getElementById('check53').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at53);
+}
+function te54(at54){
+    at54=localStorage.getItem("heck54_checked");
+    if(at54==1){
+        at54=0;
+        document.getElementById('check54').src='img/wht.png';
+    }
+    else{
+        at54=1;
+        document.getElementById('check54').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at54);
+}
+function te55(at55){
+    at55=localStorage.getItem("heck55_checked");
+    if(at55==1){
+        at55=0;
+        document.getElementById('check55').src='img/wht.png';
+    }
+    else{
+        at55=1;
+        document.getElementById('check55').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at55);
+}
+function te56(at56){
+    at56=localStorage.getItem("heck56_checked");
+    if(at56==1){
+        at56=0;
+        document.getElementById('check56').src='img/wht.png';
+    }
+    else{
+        at56=1;
+        document.getElementById('check56').src='img/wht2.png';
+    }
+    localStorage.setItem("heck40_checked",at56);
+}
+//----------------------------------------------------------------------
+//多分ローカルストレージのハートのON/OFFを管理しているFunction
+//しかし、手作業で増やしているため今後改変が必要
+//現状では、下記のコードをコピーして、検索「@@@@」置換「数字」を行うことで簡略化
+// function te@@@@(at@@@@){
+//     at@@@@=localStorage.getItem("heck@@@@_checked");
+//     if(at@@@@==1){
+//         at@@@@=0;
+//         document.getElementById('check@@@@').src='img/wht.png';
+//     }
+//     else{
+//         at@@@@=1;
+//         document.getElementById('check@@@@').src='img/wht2.png';
+//     }
+//     localStorage.setItem("heck40_checked",at@@@@);
+// }
+//----------------------------------------------------------------------
+
+
+//devicereadyイベント
+if(typeof device === 'undefined'){
+    document.addEventListener("deviceready", onDeviceReady, false);
+}else{
+    onDeviceReady();
+}
+function onDeviceReady() {
+    //alert('これは常に呼ばれるし、ちゃんと deviceready な状態');
+    console.log("PhoneGap is ready");
 }
 
+//配列
 var cc = new Array();
 if(at1==""){
     at1 = 0;
 }
-
 $(function() {
-for(var i=1;i < 45;i++){
+for(var i=1;i < 57;i++){
 	cc[i] = new Array();
     }
 });
 
+//衣類
 $(function() {
     var cl;
-    var u="";
     $.ajax({
         url: './data/genre.csv',
         success: function(data) {
             cl = $.csv()(data);
             var c = document.getElementById("cloth");
             
-           for(var xx=1; xx < 3; xx++){
-                //ホームページのurlがあるかどうか
-                if(cl[xx][7]!=""){
-                    //c.innerHTML += "<br/><h4 class='h4" + xx + "'><button onclick='te" + xx + "(at"+xx+");' id = check" + xx + ">　</button><a href='" + cl[xx][7] + "'>" + cl[xx][1] + "</a></h4>ジャンル：" + cl[xx][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + cl[xx][2] + "&dirflg=w'>" + cl[xx][2] + "</a><br/>営業時間：" + cl[xx][8] + "<br/>定休日：" + cl[xx][9] + "<br/>電話番号：<a hlef='tel:" + cl[xx][14] + "'>" + cl[xx][3] + "</a><br/>" + cl[xx][6] + "<br/><br/>";
-                    if(localStorage.getItem("heck" + xx + "_checked")==1){
-                        c.innerHTML += "<br/><img src='img/wht2.png' width=10%  onclick='te" + xx + "(at"+xx+");' id = check" + xx + " /><h4 class='h4" + xx + "'><a href='" + cl[xx][7] + "'>" + cl[xx][1] + "</a></h4><div id='no"+xx+"'></div>ジャンル：" + cl[xx][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + cl[xx][2] + "&dirflg=w'>" + cl[xx][2] + "</a><br/>営業時間：" + cl[xx][8] + "<br/>定休日：" + cl[xx][9] + "<br/>電話番号：<a hlef='tel:" + cl[xx][14] + "'>" + cl[xx][3] + "</a><br/>" + cl[xx][6] + "<br/><br/>";
+            for(var x=1; x < 2; x++){
+                if(cl[x][7]!=""){
+                    if(localStorage.getItem("heck" + x + "_checked")==1){
+                        c.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='javascript:void(0)' onclick='URLClick("+x+");' target='_system'>" + cl[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + cl[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + cl[x][2] + "&dirflg=w'>" + cl[x][2] + "</a><br/>営業時間：" + cl[x][9] + "<br/>定休日：" + cl[x][10] + "<br/>電話番号：<a hlef='tel:" + cl[x][3] + "'>" + cl[x][3] + "</a><br/>" + cl[x][6]+ "</a><br/>サービス内容<br/>" + cl[x][5]+ "<br/><br/>";
                     }
                     else{
-                        c.innerHTML += "<br/><img src='img/wht.png' width=10% onclick='te" + xx + "(at"+xx+");' id = check" + xx + " /><h4 class='h4" + xx + "'><a href='" + cl[xx][7] + "'>" + cl[xx][1] + "</a></h4><div id='no"+xx+"'></div>ジャンル：" + cl[xx][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + cl[xx][2] + "&dirflg=w'>" + cl[xx][2] + "</a><br/>営業時間：" + cl[xx][8] + "<br/>定休日：" + cl[xx][9] + "<br/>電話番号：<a hlef='tel:" + cl[xx][14] + "'>" + cl[xx][3] + "</a><br/>" + cl[xx][6] + "<br/><br/>";
+                        c.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='javascript:void(0)' onclick='URLClick("+x+");' target='_system'>" + cl[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + cl[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + cl[x][2] + "&dirflg=w'>" + cl[x][2] + "</a><br/>営業時間：" + cl[x][9] + "<br/>定休日：" + cl[x][10] + "<br/>電話番号：<a hlef='tel:" + cl[x][3] + "'>" + cl[x][3] + "</a><br/>" + cl[x][6] + "</a><br/>サービス内容<br/>" + cl[x][5]+ "<br/><br/>";
                     }
                 }
                 else{
-                    //c.innerHTML += "<br/><h4 class='h4" + xx + "'><button onclick='te" + xx + "(at"+xx+");' id = check" + xx + ">　</button>" + cl[xx][1] + "</h4>ジャンル：" + cl[xx][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + cl[xx][2] + "&dirflg=w'>" + cl[xx][2] + "</a><br/>営業時間：" + cl[xx][8] + "<br/>定休日：" + cl[xx][9] + "<br/>電話番号：<a hlef='tel:" + cl[xx][14] + "'>" + cl[xx][3] + "</a><br/>" + cl[xx][6] + "<br/><br/>";
-                    if(localStorage.getItem("heck" + xx + "_checked")==1){
-                        c.innerHTML += "<br/><img src='img/wht2.png' width=10% onclick='te" + xx + "(at"+xx+");' id = check" + xx + " /><h4 class='h4" + xx + "'>" + cl[xx][1] + "</a></h4><div id='no"+xx+"'></div>ジャンル：" + cl[xx][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + cl[xx][2] + "&dirflg=w'>" + cl[xx][2] + "</a><br/>営業時間：" + cl[xx][8] + "<br/>定休日：" + cl[xx][9] + "<br/>電話番号：<a hlef='tel:" + cl[xx][14] + "'>" + cl[xx][3] + "</a><br/>" + cl[xx][6] + "<br/><br/>";
-                        $("#check"+xx).css({"float": "left"});
-                        $(".h4"+xx).css({"float": "left","marginLeft":"3%"});
-                        //$("#no"+xx).css({"clear": "both"});
+                    if(localStorage.getItem("heck" + x + "_checked")==1){
+                        c.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + cl[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + cl[x][2] + "&dirflg=w'>" + cl[x][2] + "</a><br/>営業時間：" + cl[x][9] + "<br/>定休日：" + cl[x][10] + "<br/>電話番号：<a hlef='tel:" + cl[x][3] + "'>" + cl[x][3] + "</a><br/>" + cl[x][6] + "<br/>"+  cl[x][6] + "</a><br/>サービス内容<br/>" + cl[x][5]+ "<br/><br/>";
                     }
                     else{
-                        c.innerHTML += "<br/><img src='img/wht.png' width=10% onclick='te" + xx + "(at"+xx+");' id = check" + xx + " /><h4 class='h4" + xx + "'>" + cl[xx][1] + "</a></h4><div id='no"+xx+"'></div>ジャンル：" + cl[xx][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + cl[xx][2] + "&dirflg=w'>" + cl[xx][2] + "</a><br/>営業時間：" + cl[xx][8] + "<br/>定休日：" + cl[xx][9] + "<br/>電話番号：<a hlef='tel:" + cl[xx][14] + "'>" + cl[xx][3] + "</a><br/>" + cl[xx][6] + "<br/><br/>";
-                        $("#check"+xx).css({"float": "left"});
-                        $(".h4"+xx).css({"float": "left","marginLeft":"3%"});
-                        //$("#no"+xx).css({"clear": "both"});
+                        c.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + cl[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + cl[x][2] + "&dirflg=w'>" + cl[x][2] + "</a><br/>営業時間：" + cl[x][9] + "<br/>定休日：" + cl[x][10] + "<br/>電話番号：<a hlef='tel:" + cl[x][3] + "'>" + cl[x][3] + "</a><br/>" + cl[x][6] + "<br/>"+  cl[x][6] + "</a><br/>サービス内容<br/>" + cl[x][5]+ "<br/><br/>";
                     }
                 }
-                $("#no"+xx).css({"clear": "both"});
-                
+                $(".h4"+x).css({"float": "left","marginLeft":"0%"});
+                $("#no"+x).css({"clear": "both"});
+            
                 //ローカルストレージ（チェックボックス）
-                localStorage.setItem("janre"+xx,cl[xx][1]);
-                cc[xx][0] = localStorage.getItem("janre"+xx);
-                cc[xx][1] = localStorage.getItem("heck" + xx + "_checked");
-                //c.innerHTML += cc[xx][0] + "<br/>" + cc[xx][1];
-            }
+                localStorage.setItem("janre"+x,cl[x][1]);
+                cc[x][0] = localStorage.getItem("janre"+x);
+                cc[x][1] = localStorage.getItem("heck" + x + "_checked");
+           }
         }
     });
 });
 
+//飲食
 $(function() {
     var ea;
     $.ajax({
@@ -618,39 +770,36 @@ $(function() {
             ea = $.csv()(data);
             var e = document.getElementById("eat");
             
-            for(var x=3; x < 14; x++){
+            for(var x=2; x < 18; x++){
                 if(ea[x][7]!=""){
-                    //e.innerHTML += "<br/><h4 class='h4" + x + "'><button onclick='te" + x + "(at"+x+");' id = check" + x + ">　</button><a href='" + ea[x][7] + "'>" + ea[x][1] + "</a></h4>ジャンル：" + ea[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr="+ea[x][2]+"&dirflg=w'>" + ea[x][2]+ "</a><br/>営業時間：" + ea[x][8] + "<br/>定休日：" + ea[x][9] + "<br/>電話番号：<a hlef='tel:" + ea[x][14] + "'>" + ea[x][3] + "</a><br/>" + ea[x][6] + "<br/><br/>";
                     if(localStorage.getItem("heck" + x + "_checked")==1){
-                        e.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + ea[x][7] + "'>" + ea[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + ea[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr="+ea[x][2]+"&dirflg=w'>" + ea[x][2]+ "</a><br/>営業時間：" + ea[x][8] + "<br/>定休日：" + ea[x][9] + "<br/>電話番号：<a hlef='tel:" + ea[x][14] + "'>" + ea[x][3] + "</a><br/>" + ea[x][6] + "<br/><br/>";
-                        //$(".h4"+x).css({"backgroundColor": "red"});
-                    }
-                    e.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + ea[x][7] + "'>" + ea[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + ea[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr="+ea[x][2]+"&dirflg=w'>" + ea[x][2]+ "</a><br/>営業時間：" + ea[x][8] + "<br/>定休日：" + ea[x][9] + "<br/>電話番号：<a hlef='tel:" + ea[x][14] + "'>" + ea[x][3] + "</a><br/>" + ea[x][6] + "<br/><br/>";
-                }
-                else{
-                    //e.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/hoshi.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " />" + ea[x][1] + "</h4>ジャンル：" + ea[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr="+ea[x][2]+"&dirflg=w'>" + ea[x][2]+ "</a><br/>営業時間：" + ea[x][8] + "<br/>定休日：" + ea[x][9] + "<br/>電話番号：<a hlef='tel:" + ea[x][14] + "'>" + ea[x][3] + "</a><br/>" + ea[x][6] + "<br/><br/>";
-                    if(localStorage.getItem("heck" + x + "_checked")==1){
-                        //$(".h4"+x).css({"backgroundColor": "red"});
-                        e.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + ea[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ea[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr="+ea[x][2]+"&dirflg=w'>" + ea[x][2]+ "</a><br/>営業時間：" + ea[x][8] + "<br/>定休日：" + ea[x][9] + "<br/>電話番号：<a hlef='tel:" + ea[x][14] + "'>" + ea[x][3] + "</a><br/>" + ea[x][6] + "<br/><br/>";
+                         e.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='javascript:void(0)' onclick='URLClick("+x+");' target='_system'>" +ea[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + ea[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ea[x][2] + "&dirflg=w'>" + ea[x][2] + "</a><br/>営業時間：" + ea[x][9] + "<br/>定休日：" + ea[x][10] + "<br/>電話番号：<a hlef='tel:" + ea[x][3] + "'>" + ea[x][3] + "</a><br/>" + ea[x][6]+ "</a><br/>サービス内容<br/>" + ea[x][5]+ "<br/><br/>";
                     }
                     else{
-                        e.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + ea[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ea[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr="+ea[x][2]+"&dirflg=w'>" + ea[x][2]+ "</a><br/>営業時間：" + ea[x][8] + "<br/>定休日：" + ea[x][9] + "<br/>電話番号：<a hlef='tel:" + ea[x][14] + "'>" + ea[x][3] + "</a><br/>" + ea[x][6] + "<br/><br/>";
-                    
+                         e.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='javascript:void(0)' onclick='URLClick("+x+");' target='_system'>" + ea[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + ea[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ea[x][2] + "&dirflg=w'>" + ea[x][2] + "</a><br/>営業時間：" + ea[x][9] + "<br/>定休日：" + ea[x][10] + "<br/>電話番号：<a hlef='tel:" + ea[x][3] + "'>" + ea[x][3] + "</a><br/>" + ea[x][6]+ "</a><br/>サービス内容<br/>" + ea[x][5]+ "<br/><br/>";
+                    }
+                }
+                else{
+                    if(localStorage.getItem("heck" + x + "_checked")==1){
+                       e.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + ea[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ea[x][2] + "&dirflg=w'>" + ea[x][2] + "</a><br/>営業時間：" + ea[x][9] + "<br/>定休日：" + ea[x][10] + "<br/>電話番号：<a hlef='tel:" + ea[x][3] + "'>" + ea[x][3] + "</a><br/>" + ea[x][6] + "<br/>"+  ea[x][6] + "</a><br/>サービス内容<br/>" + ea[x][5]+ "<br/><br/>";
+                    }
+                    else{
+                        e.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + ea[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ea[x][2] + "&dirflg=w'>" + ea[x][2] + "</a><br/>営業時間：" + ea[x][9] + "<br/>定休日：" + ea[x][10] + "<br/>電話番号：<a hlef='tel:" + ea[x][3] + "'>" + ea[x][3] + "</a><br/>" + ea[x][6] + "<br/>"+  ea[x][6] + "</a><br/>サービス内容<br/>" + ea[x][5]+ "<br/><br/>";
                     }
                 }
                 $(".h4"+x).css({"float": "left","marginLeft":"0%"});
                 $("#no"+x).css({"clear": "both"});
-                
+            
                 //ローカルストレージ（チェックボックス）
                 localStorage.setItem("janre"+x,ea[x][1]);
                 cc[x][0] = localStorage.getItem("janre"+x);
                 cc[x][1] = localStorage.getItem("heck" + x + "_checked");
-                //e.innerHTML += cc[x][0] + "<br/>" + cc[x][1];
-            }
+           }
         }
     });
 });
 
+//雑貨
 $(function() {
     var ma;
     $.ajax({
@@ -659,102 +808,97 @@ $(function() {
             ma = $.csv()(data);
             var m = document.getElementById("magazine");
             
-            for(var x=14; x < 20; x++){
+            for(var x=18; x < 24; x++){
                 if(ma[x][7]!=""){
-                    //m.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + ma[x][7] + "'>" + ma[x][1] + "</a></h4>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ma[x][2] + "&dirflg=w'>" + ma[x][2] + "</a><br/>営業時間：" + ma[x][8] + "<br/>定休日：" + ma[x][9] + "<br/>電話番号：<a hlef='tel:" + ma[x][14] + "'>" + ma[x][3] + "</a><br/>" + ma[x][6] + "<br/><br/>";
                     if(localStorage.getItem("heck" + x + "_checked")==1){
-                        m.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + ma[x][7] + "'>" + ma[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ma[x][2] + "&dirflg=w'>" + ma[x][2] + "</a><br/>営業時間：" + ma[x][8] + "<br/>定休日：" + ma[x][9] + "<br/>電話番号：<a hlef='tel:" + ma[x][14] + "'>" + ma[x][3] + "</a><br/>" + ma[x][6] + "<br/><br/>";
+                        m.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='javascript:void(0)' onclick='URLClick("+x+");' target='_system'>" + ma[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ma[x][2] + "&dirflg=w'>" + ma[x][2] + "</a><br/>営業時間：" + ma[x][9] + "<br/>定休日：" + ma[x][10] + "<br/>電話番号：<a hlef='tel:" + ma[x][3] + "'>" + ma[x][3] + "</a><br/>" + ma[x][6]+ "</a><br/>サービス内容<br/>" + ma[x][5]+ "<br/><br/>";
                     }
                     else{
-                        m.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + ma[x][7] + "'>" + ma[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ma[x][2] + "&dirflg=w'>" + ma[x][2] + "</a><br/>営業時間：" + ma[x][8] + "<br/>定休日：" + ma[x][9] + "<br/>電話番号：<a hlef='tel:" + ma[x][14] + "'>" + ma[x][3] + "</a><br/>" + ma[x][6] + "<br/><br/>";
+                        m.innerHTML +=  "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='javascript:void(0)' onclick='URLClick("+x+");' target='_system'>" + ma[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ma[x][2] + "&dirflg=w'>" + ma[x][2] + "</a><br/>営業時間：" + ma[x][9] + "<br/>定休日：" + ma[x][10] + "<br/>電話番号：<a hlef='tel:" + ma[x][3] + "'>" + ma[x][3] + "</a><br/>" + ma[x][6]+ "</a><br/>サービス内容<br/>" + ma[x][5]+ "<br/><br/>";
                     }
                 }
                 else{
-                    //m.innerHTML += "<br/><h4 class='h4" + x + "'><button onclick='te" + x + "(at"+x+");' id = check" + x + ">☆</button>" + ma[x][1] + "</h4>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ma[x][2] + "&dirflg=w'>" + ma[x][2] + "</a><br/>営業時間：" + ma[x][8] + "<br/>定休日：" + ma[x][9] + "<br/>電話番号：<a hlef='tel:" + ma[x][14] + "'>" + ma[x][3] + "</a><br/>" + ma[x][6] + "<br/><br/>";
-                        if(localStorage.getItem("heck" + x + "_checked")==1){
-                            m.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + ma[x][7] + "'>" + ma[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ma[x][2] + "&dirflg=w'>" + ma[x][2] + "</a><br/>営業時間：" + ma[x][8] + "<br/>定休日：" + ma[x][9] + "<br/>電話番号：<a hlef='tel:" + ma[x][14] + "'>" + ma[x][3] + "</a><br/>" + ma[x][6] + "<br/><br/>";
-                        }
-                        else{
-                            m.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + ma[x][7] + "'>" + ma[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ma[x][2] + "&dirflg=w'>" + ma[x][2] + "</a><br/>営業時間：" + ma[x][8] + "<br/>定休日：" + ma[x][9] + "<br/>電話番号：<a hlef='tel:" + ma[x][14] + "'>" + ma[x][3] + "</a><br/>" + ma[x][6] + "<br/><br/>";
-                        }
+                    if(localStorage.getItem("heck" + x + "_checked")==1){
+                        m.innerHTML +=  "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + ma[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ma[x][2] + "&dirflg=w'>" + ma[x][2] + "</a><br/>営業時間：" + ma[x][9] + "<br/>定休日：" + ma[x][10] + "<br/>電話番号：<a hlef='tel:" + ma[x][3] + "'>" + ma[x][3] + "</a><br/>" + ma[x][6] + "<br/>"+  ma[x][6] + "</a><br/>サービス内容<br/>" + ma[x][5]+ "<br/><br/>";
                     }
+                    else{
+                        m.innerHTML +=  "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + ma[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + ma[x][2] + "&dirflg=w'>" + ma[x][2] + "</a><br/>営業時間：" + ma[x][9] + "<br/>定休日：" + ma[x][10] + "<br/>電話番号：<a hlef='tel:" + ma[x][3] + "'>" + ma[x][3] + "</a><br/>" + ma[x][6] + "<br/>"+  ma[x][6] + "</a><br/>サービス内容<br/>" + ma[x][5]+ "<br/><br/>";
+                    }
+                }
                 $(".h4"+x).css({"float": "left","marginLeft":"0%"});
                 $("#no"+x).css({"clear": "both"});
             
-            //ローカルストレージ（チェックボックス）
+                //ローカルストレージ（チェックボックス）
                 localStorage.setItem("janre"+x,ma[x][1]);
                 cc[x][0] = localStorage.getItem("janre"+x);
                 cc[x][1] = localStorage.getItem("heck" + x + "_checked");
-                //m.innerHTML += cc[x][0] + "<br/>" + cc[x][1];
            }
         }
     });
 });
 
+//食品関連
 $(function() {
     var fo;
     $.ajax({
         url: './data/genre.csv',
         success: function(data) {
-            
             fo = $.csv()(data);
-            
             var f = document.getElementById("food");
             
-           for(var x=20; x < 31; x++){
+           for(var x=24; x < 35; x++){
                 if(fo[x][7]!=""){
                     if(localStorage.getItem("heck" + x + "_checked")==1){
-                        f.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + fo[x][7] + "'>" + fo[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + fo[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + fo[x][2] + "&dirflg=w'>" + fo[x][2] + "</a><br/>営業時間：" + fo[x][8] + "<br/>定休日：" + fo[x][9] + "<br/>電話番号：<a hlef='tel:" + fo[x][14] + "'>" + fo[x][3] + "</a><br/>" + fo[x][6] + "<br/><br/>";
+                        f.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='javascript:void(0)' onclick='URLClick("+x+");' target='_system'>" + fo[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + fo[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + fo[x][2] + "&dirflg=w'>" + fo[x][2] + "</a><br/>営業時間：" + fo[x][9] + "<br/>定休日：" + fo[x][10] + "<br/>電話番号：<a hlef='tel:" + fo[x][3] + "'>" + fo[x][3] + "</a><br/>" + fo[x][6]+ "</a><br/>サービス内容<br/>" + fo[x][5]+ "<br/><br/>";
                     }
                     else{
-                        f.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + fo[x][7] + "'>" + fo[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + fo[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + fo[x][2] + "&dirflg=w'>" + fo[x][2] + "</a><br/>営業時間：" + fo[x][8] + "<br/>定休日：" + fo[x][9] + "<br/>電話番号：<a hlef='tel:" + fo[x][14] + "'>" + fo[x][3] + "</a><br/>" + fo[x][6] + "<br/><br/>";
+                        f.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='javascript:void(0)' onclick='URLClick("+x+");' target='_system'>" + fo[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + fo[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + fo[x][2] + "&dirflg=w'>" + fo[x][2] + "</a><br/>営業時間：" + fo[x][9] + "<br/>定休日：" + fo[x][10] + "<br/>電話番号：<a hlef='tel:" + fo[x][3] + "'>" + fo[x][3] + "</a><br/>" + fo[x][6]+ "</a><br/>サービス内容<br/>" + fo[x][5]+ "<br/><br/>";
                     }
-            }
-            else{
-                if(localStorage.getItem("heck" + x + "_checked")==1){
-                    f.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + fo[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + fo[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + fo[x][2] + "&dirflg=w'>" + fo[x][2] + "</a><br/>営業時間：" + fo[x][8] + "<br/>定休日：" + fo[x][9] + "<br/>電話番号：<a hlef='tel:" + fo[x][14] + "'>" + fo[x][3] + "</a><br/>" + fo[x][6] + "<br/><br/>";
                 }
                 else{
-                    f.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + fo[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + fo[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + fo[x][2] + "&dirflg=w'>" + fo[x][2] + "</a><br/>営業時間：" + fo[x][8] + "<br/>定休日：" + fo[x][9] + "<br/>電話番号：<a hlef='tel:" + fo[x][14] + "'>" + fo[x][3] + "</a><br/>" + fo[x][6] + "<br/><br/>";
+                    if(localStorage.getItem("heck" + x + "_checked")==1){
+                        f.innerHTML += "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + fo[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + fo[x][2] + "&dirflg=w'>" + fo[x][2] + "</a><br/>営業時間：" + fo[x][9] + "<br/>定休日：" + fo[x][10] + "<br/>電話番号：<a hlef='tel:" + fo[x][3] + "'>" + fo[x][3] + "</a><br/>" + fo[x][6] + "<br/>"+  fo[x][6] + "</a><br/>サービス内容<br/>" + fo[x][5]+ "<br/><br/>";
+                    }
+                    else{
+                        f.innerHTML +=  "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + fo[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + fo[x][2] + "&dirflg=w'>" + fo[x][2] + "</a><br/>営業時間：" + fo[x][9] + "<br/>定休日：" + fo[x][10] + "<br/>電話番号：<a hlef='tel:" + fo[x][3] + "'>" + fo[x][3] + "</a><br/>" + fo[x][6] + "<br/>"+  fo[x][6] + "</a><br/>サービス内容<br/>" + fo[x][5]+ "<br/><br/>";
+                    }
                 }
-            }
-            $(".h4"+x).css({"float": "left","marginLeft":"0%"});
-            $("#no"+x).css({"clear": "both"});
-            //ローカルストレージ（チェックボックス）
-            localStorage.setItem("janre"+x,fo[x][1]);
-            cc[x][0] = localStorage.getItem("janre"+x);
-            cc[x][1] = localStorage.getItem("heck" + x + "_checked");
-            //f.innerHTML += cc[x][0] + "<br/>" + cc[x][1];
+                $(".h4"+x).css({"float": "left","marginLeft":"0%"});
+                $("#no"+x).css({"clear": "both"});
+                
+                //ローカルストレージ（チェックボックス）
+                localStorage.setItem("janre"+x,fo[x][1]);
+                cc[x][0] = localStorage.getItem("janre"+x);
+                cc[x][1] = localStorage.getItem("heck" + x + "_checked");
             }
         }
     });
 });
 
+//その他
 $(function() {
     var aa;
     $.ajax({
         url: './data/genre.csv',
         success: function(data) {
-            
             aa = $.csv()(data);
-            
             var a = document.getElementById("a");
             
-            for(var x=31; x <= 44; x++){
+            for(var x=35; x <= 56; x++){
                 if(aa[x][7]!=""){
                     if(localStorage.getItem("heck" + x + "_checked")==1){
-                      a.innerHTML += "<br/><h4><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + aa[x][7] + "'>" + aa[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + aa[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + aa[x][2] + "&dirflg=w'>" + aa[x][2] + "</a><br/>営業時間：" + aa[x][8] + "<br/>定休日：" + aa[x][9] + "<br/>電話番号：<a hlef='tel:" + aa[x][14] + "'>" + aa[x][3] + "</a><br/>" + aa[x][6] + "<br/><br/>";
+                      a.innerHTML +=  "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='javascript:void(0)' onclick='URLClick("+x+");' target='_system'>" + aa[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + aa[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + aa[x][2] + "&dirflg=w'>" + aa[x][2] + "</a><br/>営業時間：" + aa[x][9] + "<br/>定休日：" + aa[x][10] + "<br/>電話番号：<a hlef='tel:" + aa[x][3] + "'>" + aa[x][3] + "</a><br/>" + aa[x][6]+ "</a><br/>サービス内容<br/>" + aa[x][5]+ "<br/><br/>";
                     }
                     else{
-                        a.innerHTML += "<br/><h4><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='" + aa[x][7] + "'>" + aa[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + aa[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + aa[x][2] + "&dirflg=w'>" + aa[x][2] + "</a><br/>営業時間：" + aa[x][8] + "<br/>定休日：" + aa[x][9] + "<br/>電話番号：<a hlef='tel:" + aa[x][14] + "'>" + aa[x][3] + "</a><br/>" + aa[x][6] + "<br/><br/>";
+                        a.innerHTML +=  "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> <a href='javascript:void(0)' onclick='URLClick("+x+");' target='_system'>" + aa[x][1] + "</a></h4><div id='no"+x+"'></div>ジャンル：" + aa[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + aa[x][2] + "&dirflg=w'>" + aa[x][2] + "</a><br/>営業時間：" + aa[x][9] + "<br/>定休日：" + aa[x][10] + "<br/>電話番号：<a hlef='tel:" + aa[x][3] + "'>" + aa[x][3] + "</a><br/>" + aa[x][6]+ "</a><br/>サービス内容<br/>" + aa[x][5]+ "<br/><br/>";
                     }
             }
             else{
                 if(localStorage.getItem("heck" + x + "_checked")==1){
-                    a.innerHTML += "<br/><h4><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + aa[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + aa[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + aa[x][2] + "&dirflg=w'>" + aa[x][2] + "</a><br/>営業時間：" + aa[x][8] + "<br/>定休日：" + aa[x][9] + "<br/>電話番号：<a hlef='tel:" + aa[x][14] + "'>" + aa[x][3] + "</a><br/>" + aa[x][6] + "<br/><br/>";
+                    a.innerHTML +=  "<br/><h4 class='h4" + x + "'><img src='img/wht2.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + aa[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + aa[x][2] + "&dirflg=w'>" + aa[x][2] + "</a><br/>営業時間：" + aa[x][9] + "<br/>定休日：" + aa[x][10] + "<br/>電話番号：<a hlef='tel:" + aa[x][3] + "'>" + aa[x][3] + "</a><br/>" + aa[x][6] + "<br/>"+  aa[x][6] + "</a><br/>サービス内容<br/>" + aa[x][5]+ "<br/><br/>";
                 }
                 else{
-                    a.innerHTML += "<br/><h4><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + aa[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + aa[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + aa[x][2] + "&dirflg=w'>" + aa[x][2] + "</a><br/>営業時間：" + aa[x][8] + "<br/>定休日：" + aa[x][9] + "<br/>電話番号：<a hlef='tel:" + aa[x][14] + "'>" + aa[x][3] + "</a><br/>" + aa[x][6] + "<br/><br/>";
+                    a.innerHTML +=  "<br/><h4 class='h4" + x + "'><img src='img/wht.png' width=10%  onclick='te" + x + "(at"+x+");' id = check" + x + " /> " + aa[x][1] + "</h4><div id='no"+x+"'></div>ジャンル：" + ma[x][14] + "<br/>住所：<a href='http://maps.google.com/maps?saddr=&daddr=" + aa[x][2] + "&dirflg=w'>" + aa[x][2] + "</a><br/>営業時間：" + aa[x][9] + "<br/>定休日：" + aa[x][10] + "<br/>電話番号：<a hlef='tel:" + aa[x][3] + "'>" + aa[x][3] + "</a><br/>" + aa[x][6] + "<br/>"+  aa[x][6] + "</a><br/>サービス内容<br/>" + aa[x][5]+ "<br/><br/>";
                 }
             }
             $(".h4"+x).css({"float": "left","marginLeft":"0%"});
@@ -763,8 +907,21 @@ $(function() {
             localStorage.setItem("janre"+x,aa[x][1]);
             cc[x][0] = localStorage.getItem("janre"+x);
             cc[x][1] = localStorage.getItem("heck" + x + "_checked");
-            //a.innerHTML += cc[x][0] + "<br/>" + cc[x][1];
         }
         }
     });
 });
+
+function URLClick(u) {
+    var ur;
+    $.ajax({
+        url: './data/genre.csv',
+        success: function(data) {
+            ur = $.csv()(data);
+            window.open(ur[u][7], '_system', 'location=yes');
+        }
+    });
+    // window.open("https://www.google.co.jp/", '_system', 'location=yes');
+    return false;
+}
+

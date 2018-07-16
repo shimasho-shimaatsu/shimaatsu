@@ -59,7 +59,7 @@ var Feed = (function() {
                 });
             },
             error: function() {
-                $(self.errorEl).text('Failed to load RSS.');
+                $(self.errorEl).text('RSSを読み込めませんでした');
             },
             complete: function() {
                 $(self.maskEl).hide();
@@ -88,12 +88,14 @@ var Feed = (function() {
     Feed.prototype.createListElement = function(item) {
         var $item = $(item);
         
-        var link = this.escape($item.find('link').text());
+        // var link = this.escape($item.find('link').text());
+        var link ="http://shimadagaatsui.eshizuoka.jp/";
         var title = this.escape($item.find('title').text());
         var description = this.escape(strip_tags($item.find('description').text()));
         var date = new Date($item.find('pubDate').text());
 
-        return '<li class="feed-item" data-link="' + link + '">' +'<time>' + date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + '</time><br>' + title + '</li>';
+        return '<div class="feed-item" data-link="' + link + '"><br/>'+ title + '</div>';
+        // return '<li class="feed-item" data-link="' + link + '">' +'<time>' + date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + '</time><br>' + title + '</li>';
     };
 
     Feed.prototype.escape = function(string) {

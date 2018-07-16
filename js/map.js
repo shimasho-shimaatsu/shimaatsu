@@ -339,7 +339,7 @@ $(function initMap() {
                             }
                         });
                         infoWindow[i] = new google.maps.InfoWindow({ // 吹き出しの追加
-                            content: markerData[i]['name'] + '<br/>' + '<a href="' + ma[i+1][2] + '">' + ma[i+1][2] + '</a><br/>営業時間：'+ ma[i+1][8] + '<br/>定休日：' + ma[i+1][9] + '<br/><a href="http://maps.google.com/maps?saddr=&daddr=' + ma[i+1][3] + '&dirflg=w">ルート検索</a>'// 吹き出しに表示する内容
+                            content: markerData[i]['name'] + '<br/>' + '<a href="' + ma[i+1][2] + '">' + ma[i+1][2] + '</a><br/>営業時間：'+ ma[i+1][8] + '<br/>定休日：' + ma[i+1][9] + '<br/><a href="https://maps.google.com/maps?saddr=&daddr=' + ma[i+1][3] + '&dirflg=w">ルート検索</a>'// 吹き出しに表示する内容
                         });
                         markerEvent(i);
                     
@@ -384,7 +384,7 @@ $(function initMap() {
                             }
                         });
                         infoWindow[i] = new google.maps.InfoWindow({ // 吹き出しの追加
-                            content: markerData[i]['name'] + '<br/>' + '<a href="' + ma[i+1][2] + '">' + ma[i+1][2] + '</a><br/>営業時間：'+ ma[i+1][8] + '<br/>定休日：' + ma[i+1][9] + '<br/><a href="http://maps.google.com/maps?saddr=&daddr="' + ma[i+1][3] + '&dirflg=w">ルート検索</a>'// 吹き出しに表示する内容
+                            content: markerData[i]['name'] + '<br/>' + '<a href="' + ma[i+1][2] + '">' + ma[i+1][2] + '</a><br/>営業時間：'+ ma[i+1][8] + '<br/>定休日：' + ma[i+1][9] + '<br/><a href="https://maps.google.com/maps?saddr=&daddr="' + ma[i+1][3] + '&dirflg=w">ルート検索</a>'// 吹き出しに表示する内容
                         });
                         markerEvent(i);
                     
@@ -437,7 +437,7 @@ $(function initMap() {
                     //         }
                     //     });
                     //     infoWindow[i] = new google.maps.InfoWindow({ // 吹き出しの追加
-                    //         content: markerData[i]['name'] + '<br/>' + '<a href="' + ma[i+1][2] + '">' + ma[i+1][2] + '</a><br/>営業時間：'+ ma[i+1][8] + '<br/>定休日：' + ma[i+1][9] + '<br/><a href="http://maps.google.com/maps?saddr=&daddr="' + ma[i+1][3] + '&dirflg=w">ルート検索</a>'// 吹き出しに表示する内容
+                    //         content: markerData[i]['name'] + '<br/>' + '<a href="' + ma[i+1][2] + '">' + ma[i+1][2] + '</a><br/>営業時間：'+ ma[i+1][8] + '<br/>定休日：' + ma[i+1][9] + '<br/><a href="https://maps.google.com/maps?saddr=&daddr="' + ma[i+1][3] + '&dirflg=w">ルート検索</a>'// 吹き出しに表示する内容
                     //     });
                     //     markerEvent(i); // マーカーにクリックイベントを追加
                         

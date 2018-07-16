@@ -3,20 +3,38 @@
 
 <head>
   <meta charset="UTF-8">
+  <title>シマアツ ジャンル</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!--meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" /-->
   <link href="css/button.css" rel="stylesheet" media="screen" />
+  <script src="components/loader.js"></script>
   <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="./js/jquery.csv.js"></script>
   <script src="js/genre.js"></script>
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  
+  <script>
+//   document.addEventListener("deviceready", onDeviceReady, false);
+//         function onDeviceReady() {
+//             console.log("PhoneGap is ready");
+//         }
+//         
+  if(typeof device === 'undefined'){
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }else{
+        onDeviceReady();
+    }
+
+    function onDeviceReady() {
+        //alert('これは常に呼ばれるし、ちゃんと deviceready な状態');
+        console.log("PhoneGap is ready");
+    }
+  </script>
 </head>
 
 <body>
 
-<img src="img/header.png" alt=" "width="100%">
+    <a href="index.html"><img src="img/header.png" alt=" "width="100%"></a>
  
     <br/><br />
     <div class="mida"> ジャンル</div>
